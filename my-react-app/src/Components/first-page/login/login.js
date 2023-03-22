@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const login= () =>{
+const Login= () =>{
 //adding a username Usestate
   const [username, setUsername] = useState("");
   //adding a password useState
@@ -60,4 +60,4 @@ const login= () =>{
   );}
 
 
-  export default login
+  export default Login
