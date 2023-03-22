@@ -26,7 +26,7 @@ const App = () => {
       localStorage.setItem('user', response.data)
       console.log(response.data)
     };
-  };
+  
 
 // if someone is already logged in the persons username will be displayed
   if (user) {
