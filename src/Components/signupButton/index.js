@@ -12,3 +12,4 @@ function SignUpBtn(props) {
         </button>
     )
 }
+export default SignUpBtn
