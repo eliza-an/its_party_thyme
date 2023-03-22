@@ -1,10 +1,10 @@
-import "/firstpage.css"
+import "../first-page/firstpage.css"
 import React from "react"
 import Login from "./login/login"
-import "/flower.jpg" 
+import "../img/flower.jpg" 
 
 
-const firstpage= () =>{
+const Firstpage= () =>{
 return(
 
 <Login/>
@@ -14,4 +14,6 @@ return(
 
 
 }
+
+export default Firstpage
 
