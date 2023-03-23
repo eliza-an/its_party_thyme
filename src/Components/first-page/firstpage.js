@@ -10,7 +10,8 @@ const Firstpage= () =>{
 return(
 
 <div>
-    <h1>PLANTLY</h1>
+    <img className="flowerImg" alt="flower" src="./img/flower.jpg"></img> <h1>PLANTLY</h1>
+    
 <h3>Sign up Now</h3>
 <h4>Commit to keeping happier Healthier plants today!</h4>
 
@@ -18,7 +19,7 @@ return(
     <Login />
     
     <SignUpBtn />
-    <img className="flowerImg" alt="flower" src="./img/flower.jpg"></img>
+   
 </div>
 
 )
