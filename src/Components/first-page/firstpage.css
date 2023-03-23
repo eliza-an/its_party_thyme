@@ -1,3 +1,9 @@
 body{
     background-color: #34554a ;
+    color: white;
+   
+}
+
+.flowerImg{
+    max-width: 400px;
 }
