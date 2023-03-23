@@ -7,7 +7,7 @@ function SignUpBtn(props) {
             onClick={props.onClick}
             className={`signUpBtn ${props.type}`}
             data-value={props.type}
-            >
+            > Sign Up Now
                 {props.type}
         </button>
     )

@@ -18,7 +18,7 @@ return(
 
     <Login />
     
-    <SignUpBtn />
+    <SignUpBtn> </SignUpBtn>
    
 </div>
 
