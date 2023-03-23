@@ -4,13 +4,17 @@
     border: 1px solid transparent;
     color: #fff;
     cursor: pointer;
-    font-family: Futura Md BT;
-    font-size: 30pt;
-    font-weight: 600;
+    font-family: Futura Md BT !important;
+    font-size: 20px;
     position: relative;
     border-radius: 100px;
     max-width: 600px;
-    min-height: 80px;
     text-align: center;
+    margin-left: 210px;
+    padding:10px !important;
+    margin-top: 30px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
 }
 

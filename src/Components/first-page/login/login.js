@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./login.css"
 
 const Login= () =>{
 //adding a username Usestate
@@ -35,27 +36,26 @@ const Login= () =>{
 
   // if no ones is logged in, the login form will be shown
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="login" onSubmit={handleSubmit}>
       {/* The user will imut their username using this imput */}
-      <label htmlFor="username">Username: </label>
-      <input
+     
+      <input className="username"
         type="text"
         value={username}
-        placeholder="Please enter your Username"
+        placeholder="Full Name"
         onChange={({ target }) => setUsername(target.value)}
       />
       <div>
-        <label htmlFor="password">Password: </label>
+       
         {/* The user will enter thier password with this input */}
-        <input
+        <input className="password"
           type="password"
           value={password}
-          placeholder="Please enter your Password"
+          placeholder="Password"
           onChange={({ target }) => setPassword(target.value)}
         />
       </div>
-      {/*  a submit button to save your information */}
-      <button type="submit">Login</button>
+    
     </form>
   );}
 
