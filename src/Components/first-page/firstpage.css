@@ -21,6 +21,21 @@ h1{
     font-weight: 900;
     font-size: 80px;
     padding-left: 100px;
+    margin-bottom: 10px;
+    
+}
+
+h2{
+    padding-left: 185px;
+    font-size: 40px;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+
+h3{
+  padding-left: 100px;  
+  margin-top: 0;
+  font-weight: 100;
 }
 
 

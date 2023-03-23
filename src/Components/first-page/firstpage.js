@@ -11,9 +11,9 @@ return(
 
 <div>
     <img className="flowerImg" alt="flower" src="./img/flower.jpg"></img> <h1>PLANTLY</h1>
-    
-<h3>Sign up Now</h3>
-<h4>Commit to keeping happier Healthier plants today!</h4>
+
+<h2>Sign up Now</h2>
+<h3>Commit to keeping happier Healthier plants today!</h3>
 
 
     <Login />
