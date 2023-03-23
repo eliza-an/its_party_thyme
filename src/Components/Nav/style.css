@@ -1,0 +1,19 @@
+#nav-links {
+    list-style: none;
+}
+
+#header-full {
+    background-color: aquamarine;
+}
+
+@media only screen and (min-width: 700px) {
+    #header-mobile {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    #header-full {
+      display: none;
+    }
+}
