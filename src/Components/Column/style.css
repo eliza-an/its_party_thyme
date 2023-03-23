@@ -1,18 +1,14 @@
 .column {
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    background-color:aliceblue;
+    align-items: center;
+    background-color:rgb(243, 244, 245);
 }
 
 @media (min-width: 900px) {
     .column {
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        display: inline-flex;
         width: 50%;
     }
 }

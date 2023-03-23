@@ -8,10 +8,10 @@ const App = () => {
   return(
     <div>
       <Navbar />
-      <Row>
+
         <Column>column</Column>
         <Column>column</Column>
-      </Row>
+
       {/* <Firstpage/> */}
     </div>
  )
