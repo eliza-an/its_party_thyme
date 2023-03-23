@@ -2,7 +2,7 @@ import "../first-page/firstpage.css"
 import React from "react";
 import Login from "../first-page/login/login"
 import "./img/flower.jpg"
-import SignUpBtn from "../signupButton"
+import SignUpBtn from "../signupButton/index"
 
 
 const Firstpage= () =>{
