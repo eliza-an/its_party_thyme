@@ -1,13 +1,11 @@
 import React from 'react';
 import './style.css';
 
-
-function Button(props) {
+function SignUpBtn(props) {
     return (
         <button
             onClick={props.onClick}
-            className={`button ${props.type}`}
-
+            className={`signUpBtn ${props.type}`}
             data-value={props.type}
             >
                 {props.type}
