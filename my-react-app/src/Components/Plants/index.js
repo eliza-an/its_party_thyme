@@ -1,7 +1,6 @@
 import React from 'react';
 import { useQuery } from 'react-query';
 
-
 export default function Plants() {
         
     const fetchPlants = async () => {
@@ -11,6 +10,12 @@ export default function Plants() {
     };
 
     const {data, status} = useQuery("plants", fetchPlants);
+
+    const plantList = {data};
+    console.log(plantList);
+
+
+    // const plantID = plantList.data.id
     
     if(status === "loading") {
         <div>Loading...</div>
@@ -21,9 +26,7 @@ export default function Plants() {
     };
 
     return (
-        <div>
-
-        </div>
+        <pre>{JSON.stringify(data, null, 2)}</pre>
     );
 
 };
