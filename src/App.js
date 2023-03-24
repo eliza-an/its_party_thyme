@@ -1,25 +1,30 @@
 
-import React, {/*useState,*/ Fragment} from 'react';
+import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
+// import Contact from "./Contact"
 import Firstpage from "./Components/first-page/firstpage";
-import Plants from "./Components/Plants";
-
-import {QueryClientProvider, QueryClient} from "react-query";
-
-// import Search from './Components/Search'
-
-const queryClient = new QueryClient()
 
 
-const App = () => {
-  return(
-   <Fragment>
-    <QueryClientProvider client={queryClient}>
-      {/* < Plants /> */}
-      <Firstpage/>
-      {/* <Search searchValue={searchValue} setSearchValue={setSearchValue}/> */}
-    </QueryClientProvider>
-   </Fragment>
- )
-};
+
+
+
+function App() {
+  return (
+     
+      <Router> 
+       
+        <Routes>
+        
+        
+        
+            <Route path='/' element={<Firstpage/>} />
+            {/* <Route path='/Contact' element={<Contact/>} /> */}
+            
+        
+      
+         </Routes>  
+    </Router>
+  );
+}
+
 
 export default App;
