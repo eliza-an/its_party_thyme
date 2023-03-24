@@ -9,10 +9,6 @@ import {QueryClientProvider, QueryClient} from "react-query";
 
 const queryClient = new QueryClient()
 
-const queryClient = new QueryClient()
-
-
-
 const App = () => {
   return(
    <Fragment>
