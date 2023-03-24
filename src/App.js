@@ -1,19 +1,26 @@
-
-import React, {/*useState,*/ Fragment} from 'react';
-// import Column from "./Components/Column";
+import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
+import Contact from "./Contact"
 import Firstpage from "./Components/first-page/firstpage";
-// import Navbar from "./Components/Nav";
-// import Row from "./Components/Row";
-// import Search from './Components/Search'
 
 
-const App = () => {
-  return(
-   <Fragment>
-    <Firstpage/>
-    {/* <Search searchValue={searchValue} setSearchValue={setSearchValue}/> */}
-   </Fragment>
- )
-};
+
+function App() {
+  return (
+     
+      <Router> 
+       
+        <Routes>
+        
+        
+        
+            <Route path='/' element={<Firstpage/>} />
+            <Route path='/Contact' element={<Contact/>} />
+            
+        
+      
+    </Routes>  
+    </Router>
+  );
+}
 
 export default App;
