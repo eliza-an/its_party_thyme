@@ -1,7 +1,6 @@
 import React from "react";
 import Column from "../Column";
 import Nav from "../Nav";
-
 import "style.css"
 
 
@@ -17,5 +16,5 @@ const Secondpage = () =>{
 
 }
 
-export default Secondpage
+export default Secondpage;
 

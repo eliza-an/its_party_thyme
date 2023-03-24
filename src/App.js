@@ -14,7 +14,7 @@ const App = () => {
   return(
    <Fragment>
     <QueryClientProvider client={queryClient}>
-      {/* < Plants /> */}
+      <Plants />
       <Firstpage/>
       {/* <Search searchValue={searchValue} setSearchValue={setSearchValue}/> */}
     </QueryClientProvider>
