@@ -1,6 +1,6 @@
 
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
-// import Contact from "./Contact"
+import Secondpage from "./Components/second-page/secondpage";
 import Firstpage from "./Components/first-page/firstpage";
 
 
@@ -17,7 +17,7 @@ function App() {
         
         
             <Route path='/' element={<Firstpage/>} />
-            {/* <Route path='/Contact' element={<Contact/>} /> */}
+           <Route path='/your-plants' element={<Secondpage/>} /> 
             
         
       
