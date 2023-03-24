@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react';
 import './style.css';
 
-export function Search({searchValue, setSearchValue}) {
+export default function Search({searchValue, setSearchValue}) {
 const inputRef = useRef();
 
 useEffect(() => {
