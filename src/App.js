@@ -1,7 +1,7 @@
 
-import React, {/*useState,*/ Fragment} from 'react';
+import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
+import Secondpage from "./Components/second-page/secondpage";
 import Firstpage from "./Components/first-page/firstpage";
-import Plants from "./Components/Plants";
 
 import {QueryClientProvider, QueryClient} from "react-query";
 
@@ -14,7 +14,7 @@ const App = () => {
   return(
    <Fragment>
     <QueryClientProvider client={queryClient}>
-      <Plants />
+
       <Firstpage/>
       {/* <Search searchValue={searchValue} setSearchValue={setSearchValue}/> */}
     </QueryClientProvider>
