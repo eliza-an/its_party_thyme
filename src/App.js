@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
-import Contact from "./Contact"
+// import Contact from "./Contact"
 import Firstpage from "./Components/first-page/firstpage";
 
 
@@ -14,7 +14,7 @@ function App() {
         
         
             <Route path='/' element={<Firstpage/>} />
-            <Route path='/Contact' element={<Contact/>} />
+            {/* <Route path='/Contact' element={<Contact/>} /> */}
             
         
       
