@@ -13,7 +13,7 @@ function handleChange(event){
 }
 
 return ( <div>
-    <input ref={inputRef} type='text' placeholder='type a plant..' value={searchValue}
+    <input className='plantInput' ref={inputRef} type='text' placeholder='type a plant..' value={searchValue}
     onChange={handleChange}/>
 </div>)
 
