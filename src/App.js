@@ -6,6 +6,8 @@ import Firstpage from "./Components/first-page/firstpage";
 // import Row from "./Components/Row";
 // import Search from './Components/Search'
 
+/* function App ({plants}) {
+  const [searchValue, setSearchValue] = useState(''); */
 
 const App = () => {
   return(
