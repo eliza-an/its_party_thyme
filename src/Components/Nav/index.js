@@ -9,8 +9,8 @@ function Navbar() {
         <Row>
             <div id="logo">Plantly</div>
             <ul id="nav-links">
-                <li><a href="#">link 1</a></li>
-                <li><a href = "#">link 2</a></li>
+                <li><a href="https://www.google.com/">link 1</a></li>
+                <li><a href = "https://www.google.com/">link 2</a></li>
             </ul>
         </Row>
       </header>
@@ -21,8 +21,8 @@ function Navbar() {
         </Row>  
         <Row>
             <ul id="nav-links">
-                <li><a href="#">link 1</a></li>
-                <li><a href = "#">link 2</a></li>
+                <li><a href="https://www.google.com/">link 1</a></li>
+                <li><a href = "https://www.google.com/">link 2</a></li>
             </ul>
         </Row> 
       </header>
