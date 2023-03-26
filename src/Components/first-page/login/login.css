@@ -16,3 +16,14 @@
     border-radius: 5px;
     border:1px white
 }
+
+.Login{
+margin-top: 10px;
+background-color: #5dbe6a;
+border: none;
+color: white;
+border-radius: 2px;
+padding: 7px;
+padding-left: 15px;
+padding-right: 15px;
+}

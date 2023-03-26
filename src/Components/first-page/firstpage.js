@@ -15,7 +15,7 @@ return(
     <h2>Sign up Now</h2>
     <h3>Commit to keeping happier Healthier plants today!</h3>
     <Login />
-    <SignUpBtn> </SignUpBtn>   
+    <SignUpBtn className="signUpBtn" text= 'Sign Up Now!'></SignUpBtn>   
 </div>
 
 )

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+
 import "./login.css"
 
 const Login= () =>{
@@ -50,7 +50,7 @@ const Login= () =>{
         />
       </div>
 
-      <button type="submit">Log in</button>
+      <button className="Login" type="submit">Login</button>
    
     </form>
   );}
