@@ -17,7 +17,8 @@ const Login= () =>{
     
       e.preventDefault();
       const user = { username, password };
-
+    console.log(user)
+    setUser()
    
     localStorage.setItem('username', username);
     localStorage.setItem('password', password);
