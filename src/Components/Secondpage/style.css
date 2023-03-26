@@ -1,0 +1,45 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cardo&family=DotGothic16&display=swap');
+
+
+body{
+    background-color: #34554a ;
+    color: white;
+    font-family: 'Cardo', serif;
+} 
+
+.flowerImg{
+    
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+}
+
+h1{
+    padding-top: 90px;
+    margin-top: 0%;
+    font-weight: 900;
+    font-size: 80px;
+    padding-left: 110px;
+    margin-bottom: 10px;
+    
+}
+
+h2{
+    padding-left: 185px;
+    font-size: 40px;
+    padding-top: 0;
+    margin-bottom: 4px;
+}
+
+h3{
+  padding-left: 100px;  
+  margin-top: 0;
+  font-weight: 100;
+}
+
+
+.signUp{
+    
+}
+

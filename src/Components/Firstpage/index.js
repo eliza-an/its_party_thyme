@@ -1,9 +1,8 @@
-import "../first-page/firstpage.css"
 import React from "react";
-import Login from "../first-page/login/login";
+import Login from "../Login";
 //import Column from "../Column";
-
-import SignUpBtn from "../signupButton/index";
+import SignUpBtn from "../SignupButton";
+import './style.css';
 
 
 const Firstpage= () =>{

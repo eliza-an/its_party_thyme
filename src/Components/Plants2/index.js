@@ -1,5 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import Axios from 'axios';
+import './style.css';
+
 
 export const Plants2 = () => {
     const { 

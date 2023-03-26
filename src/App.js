@@ -1,21 +1,22 @@
+import React, { Fragment } from 'react';
+// import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
+import Firstpage from "./Components/Firstpage";
+import Secondpage from "./Components/Secondpage";
 
-import { BrowserRouter as Router, Route,Routes } from "react-router-dom";
-import Secondpage from "./Components/second-page/secondpage";
-import Firstpage from "./Components/first-page/firstpage";
-
-import {QueryClientProvider, QueryClient} from "react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 // import Search from './Components/Search'
 
-const queryClient = new QueryClient()
+const client = new QueryClient()
 
 
-const App = () => {
+const App = (props) => {
   return(
    <Fragment>
-    <QueryClientProvider client={queryClient}>
-
-      <Firstpage/>
+    <QueryClientProvider client={client}>
+      <Firstpage />
+      <Secondpage />
+      
       {/* <Search searchValue={searchValue} setSearchValue={setSearchValue}/> */}
     </QueryClientProvider>
    </Fragment>

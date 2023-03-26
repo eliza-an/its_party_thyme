@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./login.css"
+import './style.css';
 
-const Login= () =>{
+function Login() {
 //adding a username Usestate
   const [username, setUsername] = useState("");
   //adding a password useState
@@ -60,7 +60,7 @@ const Login= () =>{
   );}
 
 
-  export default Login
+  export default Login;
 
   
 // localStorage.setItem("username", username)
