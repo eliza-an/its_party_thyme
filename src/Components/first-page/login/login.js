@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SignUpBtn from "../../signupButton";
 import "./login.css"
+import { Link } from 'react-router-dom';
 
 const Login= () =>{
 //adding a username Usestate
@@ -50,7 +51,7 @@ const Login= () =>{
         />
       </div>
 
-      <SignUpBtn className="Login" text= 'Login'></SignUpBtn>  
+      < Link to="/your-plants"><SignUpBtn className="Login" text= 'Login'></SignUpBtn></Link>  
    
     </form>
   );}
