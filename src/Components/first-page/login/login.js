@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import SignUpBtn from "../../signupButton";
 import "./login.css"
 
 const Login= () =>{
@@ -50,7 +50,7 @@ const Login= () =>{
         />
       </div>
 
-      <button className="Login" type="submit">Login</button>
+      <SignUpBtn className="Login" text= 'Login'></SignUpBtn>  
    
     </form>
   );}
