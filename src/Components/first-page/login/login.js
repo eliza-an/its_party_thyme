@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
+import SignUpBtn from "../../signupButton";
 import "./login.css"
+import { Link } from 'react-router-dom';
 
 const Login= () =>{
 //adding a username Usestate
@@ -16,16 +17,10 @@ const Login= () =>{
     
       e.preventDefault();
       const user = { username, password };
-      //send the imput of username and password to the server
-      const response = await axios.post(
-        "http://herokuapp.com/api/login", ///TODO: I will create an account for this an use this later. Vurrently this is a generic server website !!!!!!!!!!!!!!!!!!!!!!!!!
-        user
-      );
-      // set userstate
-      setUser(response.data)
-      // save the data of the uder in user storage
-      localStorage.setItem('user', response.data)
-      console.log(response.data)
+
+   
+    localStorage.setItem('username', username);
+    localStorage.setItem('password', password);
     };
   
 
@@ -55,13 +50,12 @@ const Login= () =>{
           onChange={({ target }) => setPassword(target.value)}
         />
       </div>
-    
+
+      < Link to="/your-plants"><SignUpBtn className="Login" text= 'Login'></SignUpBtn></Link>  
+   
     </form>
   );}
 
 
   export default Login
-
   
-// localStorage.setItem("username", username)
-// localStorage.setItem("password", password)
