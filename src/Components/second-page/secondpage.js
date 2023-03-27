@@ -9,9 +9,6 @@ import Search from "../Search";
 import Plants from "../Plants";
 
 
-//Data
-import {data} from '../data'
-
 
 const Secondpage = () =>{
 
