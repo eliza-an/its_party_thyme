@@ -11,7 +11,7 @@ function Navbar() {
         <Row>
             <div id="logo">Plantly</div>
             <ul id="nav-links">
-              <Link to="/">  <SignupBtn/></Link>
+              <Link to="/your-plants">  <SignupBtn text="Your Plants"/></Link>
               <Link to="/">  <SignupBtn text="Log Out"/></Link>
             </ul>
         </Row>
