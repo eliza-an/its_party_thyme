@@ -1,8 +1,6 @@
-import React, {Fragment} from "react";
+import React from "react";
 import Navbar from "../Nav";
-import { Link } from 'react-router-dom';
-import SignupBtn from "../SignupBtn";
-import Card from "../Card";
+
 
 
  
