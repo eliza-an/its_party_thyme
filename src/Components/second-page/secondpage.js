@@ -3,22 +3,24 @@ import React, {Fragment} from "react";
 import Nav from "../Nav";
 import Column from "../Column";
 import Grid from "../Grid";
-import Plant from "../Plant";
-import Plants from "../Plants";
+import Card from "../Card";
+import Search from "../Search";
 
 // import "style.css"
+import {data} from '../data'
 
 
-const Secondpage = ( ) =>{
+const Secondpage = () =>{
 
     return(
         <Fragment>
             <Nav/>
             <Column>
+                <Search/>
             </Column>
             <Column>
                 <Grid>
-                    <Plant ></Plant>
+                    <Card plants={data}/>
                 </Grid>
             </Column>
         </Fragment>

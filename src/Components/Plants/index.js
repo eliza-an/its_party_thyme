@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useQuery } from 'react-query';
-import Plant from "../Plant";
+import { useQuery } from '@tanstack/react-query';
+import Plant from "./Plant";
 
 export default function Plants() {
   const [page, setPage] = useState(40);
@@ -34,9 +34,10 @@ export default function Plants() {
 
   return (
     <div className="plants">
-      {plantInfo.data.map((plantData) => (
+      {plantInfo.data.map((plant) => (
         <div>
-        <Plant plantData={plantData}> </Plant>
+        <Plant plant={plant} />
+        {/* <PlantDetails plant={plant} /> */}
         </div>
       ))}
     </div>
