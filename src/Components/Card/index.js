@@ -4,7 +4,10 @@ import "./style.css";
 
 export default function Card( {plant} ) {
  function favourites(){
-localStorage.setItem("plant info",JSON.stringify(plant))
+  const myplantsString=localStorage.getItem('myplants')
+  const myplants=myplantsString ? JSON.parse(myplantsString) : [];
+  myplants.push(plant);
+localStorage.setItem("myplants",JSON.stringify(myplants))
 
 } 
 return (
