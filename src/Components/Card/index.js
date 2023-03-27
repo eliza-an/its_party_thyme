@@ -3,7 +3,11 @@ import "./style.css";
 
 
 export default function Card( {plant} ) {
-  return (
+ function favourites(){
+localStorage.setItem("plant info",JSON.stringify(plant))
+
+} 
+return (
 
       <div className="card" key={plant.id} >
         <div className="image-container">
@@ -13,8 +17,11 @@ export default function Card( {plant} ) {
         <hr className="card-hr"/>
         <p><span className="strong">Water needs: </span>{plant.watering}</p>
         <p><span className="strong">Light: </span>{plant.sunlight}</p>
-        <button className="collectionBtn" href="#">Add to collection</button>
+        <button onClick={favourites} className="collectionBtn">Add to collection</button>
       </div>
 
   );
 }
+
+
+
