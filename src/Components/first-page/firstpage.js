@@ -4,7 +4,7 @@ import Login from "../first-page/login/login";
 //import Column from "../Column";
 import { Link } from 'react-router-dom';
 
-import SignUpBtn from "../signupButton/index";
+import SignUpBtn from "../SignupButton";
 
 
 const Firstpage= () =>{
