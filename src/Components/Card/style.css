@@ -10,8 +10,8 @@
     font-family: 'Gentium Book Plus', serif;
     display: flex;
     flex-direction: column;
-    height: 340px;
-    width: 200px;
+    height: 300px;
+    width: 150px;
     background-color:white;
     color: #34554a;
     border: 10px solid #34554a;
@@ -26,6 +26,7 @@
   }
 
   .card h3 {
+    padding-left: 0;
     margin: 10px 10px;
     color: #34554a;
     font-size: 18px;
@@ -57,7 +58,6 @@
     background-color: rgb(243, 241, 241);
     background-color: rgb(243, 241, 241);
   }
-
 
   .strong {
     font-weight: bold;

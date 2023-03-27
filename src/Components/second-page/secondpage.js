@@ -1,31 +1,43 @@
-import React, {Fragment} from "react";
-
-import Nav from "../Nav";
+import React, { useState, Fragment } from "react";
 import Column from "../Column";
-import Grid from "../Grid";
-import Card from "../Card";
+import Nav from "../Nav";
 import Search from "../Search";
+import Card from "../Card";
+import Grid from "../Grid";
 
-// import "style.css"
-import {data} from '../data'
+
+function Secondpage() {
+  const [searchValue, setSearchValue] = useState("");
+  const [plantData, setPlantData] = useState([]);
+
+  const plantList = plantData || [];
+console.log(plantList);  
 
 
-const Secondpage = () =>{
 
-    return(
-        <Fragment>
-            <Nav/>
-            <Column>
-                <Search/>
-            </Column>
-            <Column>
-                <Grid>
-                    <Card plants={data}/>
-                </Grid>
-            </Column>
-        </Fragment>
-    )
-
+  return (
+    <>
+      <Nav />
+      <Column>
+      
+      <Search
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}
+        setPlantData={setPlantData}
+      />
+      </Column>
+   
+      <Column>
+      <Grid>
+        {plantList.length === 0 ? (<h4>No plants to display</h4>) : plantList.map((plant) => (
+          <Card plant={plant} />
+          
+        ))}
+        </Grid>
+        </Column>
+        
+    </>
+  );
 }
 
-export default Secondpage
+export default Secondpage;
