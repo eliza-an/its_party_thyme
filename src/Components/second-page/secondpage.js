@@ -2,13 +2,12 @@ import React, { useState, Fragment } from "react";
 import Column from "../Column";
 import Nav from "../Nav";
 import  Search  from "../Search";
-import { useQuery } from 'react-query';
-import { QueryClientProvider,  QueryClient,} from 'react-query'
-
-// import "style.css"
+import { QueryClientProvider,  QueryClient, useQuery } from "@tanstack/react-query"
 
 
-function Secondpage ({plants}) {
+const queryClient = new QueryClient();
+
+function Secondpage () {
     const [searchValue, setSearchValue] = useState('')
 console.log(searchValue)
 
@@ -18,11 +17,22 @@ const fetchPlants = async () => {
     return response.json(); 
 };
 
-const queryClient = new QueryClient();
+
+
+/* const {data, status} = useQuery("plants", () => fetchPlants(searchValue), { enabled: !!searchValue });
+const plantList = data;
+console.log(plantList); */
+
 
 const {data, status} = useQuery("plants", fetchPlants);
 const plantList = {data};
-console.log(plantList);
+console.log(plantList); 
+
+
+
+
+
+
     return(
         
             <QueryClientProvider client={queryClient} contextSharing={true}>
@@ -30,7 +40,8 @@ console.log(plantList);
             <Column />
             <Column />
             <Search  searchValue={searchValue} setSearchValue={setSearchValue} />
-
+         
+    
         </QueryClientProvider>
     )
 
