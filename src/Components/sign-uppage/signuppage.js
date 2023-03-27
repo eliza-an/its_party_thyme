@@ -3,7 +3,7 @@ import React from "react";
 import Login from "../first-page/login/login";
 //import Column from "../Column";
 
-import SignUpBtn from "../SignupButton";
+import SignUpBtn from "../SignupBtn";
 import { Link } from "react-router-dom";
 
 
