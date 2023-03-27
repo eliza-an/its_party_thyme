@@ -19,10 +19,10 @@ const Login= () =>{
       e.preventDefault();
     
 
-   localStorage.setItem('username', "Elizaveta");
+   localStorage.setItem('username', "partythyme");
    localStorage.setItem('password', "pass123");
 
- if (username === "Elizaveta" && password === "pass123") {
+ if (username === "partythyme" && password === "pass123") {
    history('/your-plants')
    }else{
     createErrorMessage("Username or Password is not correct")
@@ -52,7 +52,7 @@ const Login= () =>{
           onChange={({ target }) => setPassword(target.value)}
         />
 
-<input type="submit" className="Login" value="Submit"></input>
+<input type="submit" className="Login" value="Login"></input>
       </div>
    
       {errorMessage && <p className="errormessage">{errorMessage}</p>} {/* creating the error message */}
