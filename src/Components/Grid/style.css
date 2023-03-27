@@ -1,7 +1,8 @@
 
 .grid-container {
   max-height: 80vh;
-  overflow:scroll;
+  min-width: 100%;
+  overflow-y :scroll;
   display: grid;
   grid-template-areas: 
   "card card"
