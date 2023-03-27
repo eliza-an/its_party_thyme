@@ -7,8 +7,8 @@ const Login= () =>{
   const [username, setUsername] = useState("");
   //adding a password useState
   const [password, setPassword] = useState("");
-  //setting the user 
-  const [user, setUser] = useState()
+  //setting the error message 
+  const [errorMessage, createErrorMessage] = useState("");
 
 
   const history = useNavigate()
@@ -20,12 +20,12 @@ const Login= () =>{
     
 
    localStorage.setItem('username', "Elizaveta");
-   localStorage.setItem('password', "password");
+   localStorage.setItem('password', "pass123");
 
- if (username === "Elizaveta" && password === "password") {
+ if (username === "Elizaveta" && password === "pass123") {
    history('/your-plants')
    }else{
-      console.log("wrong username or password")
+    createErrorMessage("Username or Password is not correct")
   }
 
     };
@@ -55,7 +55,7 @@ const Login= () =>{
 <input type="submit" className="Login" value="Submit"></input>
       </div>
    
-
+      {errorMessage && <p className="error">{errorMessage}</p>} {/* creating the error message */}
     
    
     </form>
@@ -64,4 +64,4 @@ const Login= () =>{
   
   export default Login
   
- // < Link to="/your-plants"></Link>  
+ 
