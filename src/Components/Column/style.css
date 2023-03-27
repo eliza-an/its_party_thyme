@@ -3,7 +3,6 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    background-color:rgb(243, 244, 245);
 }
 
 @media (min-width: 900px) {

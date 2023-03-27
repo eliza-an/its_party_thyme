@@ -14,15 +14,17 @@
     width: 150px;
     background-color:white;
     color: #34554a;
-    border: 10px solid #34554a;
+    border: 10px solid white;
     border-radius: 10px;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
   }
 
   .image-container {
     height: 100px;
     overflow: hidden;
+    border-radius: 10px;
+
   }
 
   .card h3 {
@@ -48,15 +50,13 @@
   .collectionBtn {
     background-color: rgb(243, 241, 241);
     margin: 25px 20px;
-    background-color: rgb(243, 241, 241);
     color: #34554a;
-    border-radius: 7px;
+    border-radius: 5px;
     padding: 10px;
   }
 
-  .collectionBtn:hover {
-    background-color: rgb(243, 241, 241);
-    background-color: rgb(243, 241, 241);
+  .collectionBtn:hover  .collectionBtn:focus {
+    background-color: orangered);
   }
 
   .strong {
