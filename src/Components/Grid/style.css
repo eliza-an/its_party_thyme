@@ -1,0 +1,42 @@
+/* .grid-container {
+  width: 80vw;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  "card"
+  "card"
+  "card"
+  "card"
+  "card"
+  "card"
+  "card"
+  "card"
+  ;
+}
+
+
+@media (min-width: 728px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    "card card"
+    "card card"
+    "card card"
+    "card card"
+    ;
+  }
+
+}
+
+@media (min-width: 1100px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    "card card card"
+    "card card card"
+    ;
+  }
+
+}
