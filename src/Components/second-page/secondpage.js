@@ -1,6 +1,9 @@
-import React from "react";
-import Column from "../Column";
+import React, {Fragment} from "react";
+
 import Nav from "../Nav";
+import Column from "../Column";
+import Grid from "../Grid";
+import Card from "../Card";
 
 // import "style.css"
 
@@ -8,11 +11,16 @@ import Nav from "../Nav";
 const Secondpage = () =>{
 
     return(
-        <div>
+        <Fragment>
             <Nav/>
-            <Column />
-            <Column />
-        </div>
+            <Column>
+            </Column>
+            <Column>
+                <Grid>
+                    <Card></Card>
+                </Grid>
+            </Column>
+        </Fragment>
     )
 
 }
