@@ -55,7 +55,7 @@ const Login= () =>{
 <input type="submit" className="Login" value="Submit"></input>
       </div>
    
-      {errorMessage && <p className="error">{errorMessage}</p>} {/* creating the error message */}
+      {errorMessage && <p className="errormessage">{errorMessage}</p>} {/* creating the error message */}
     
    
     </form>
