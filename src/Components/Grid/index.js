@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Grid(props) {
+function Grid( props ) {
   return <div className="grid-container">{props.children}</div>;
 }
 

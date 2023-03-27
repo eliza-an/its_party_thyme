@@ -4,8 +4,10 @@ import Nav from "../Nav";
 import Column from "../Column";
 import Grid from "../Grid";
 import Card from "../Card";
+import Search from "../Search";
 
 // import "style.css"
+import {data} from '../data'
 
 
 const Secondpage = () =>{
@@ -14,10 +16,11 @@ const Secondpage = () =>{
         <Fragment>
             <Nav/>
             <Column>
+                <Search/>
             </Column>
             <Column>
                 <Grid>
-                    <Card></Card>
+                    <Card plants={data}/>
                 </Grid>
             </Column>
         </Fragment>
@@ -26,4 +29,3 @@ const Secondpage = () =>{
 }
 
 export default Secondpage
-
