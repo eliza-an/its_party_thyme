@@ -10,13 +10,6 @@ $.ajax({
   // We store all of the retrieved data inside of an object called "response"
   .then(function(response) {
 
-    //// Log the queryURL
-    // console.log(queryURL1);
-
-    //// Log the resulting object
-    // console.log(response.data[0]);
-    // console.log(response.data[0].common_name);
-
 
     //plant details
     const id = response.data[0].id
