@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./login.css"
-import { BrowserRouter as Router, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login= () =>{
 //adding a username Usestate
