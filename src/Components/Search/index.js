@@ -1,21 +1,38 @@
-import React, {useEffect, useRef} from 'react';
-import './style.css';
+import "./style.css";
 
-export default function Search({searchValue, setSearchValue}) {
-const inputRef = useRef();
+export default function Search({searchValue, setPlantData, setSearchValue}) {
 
-useEffect(() => {
-    inputRef.current.focus()
-}, [])
 
-function handleChange(event){
-    setSearchValue(event.target.value)
+
+  // useEffect(() => {
+  //     inputRef.current.focus()
+  // }, [])
+  function handleSearch() {
+    fetch(
+      `https://perenual.com/api/species-list?page=1&key=sk-htIX6419d1b8cfc9f275&q=${searchValue}&indoor=1`,
+      { cache: "no-store" }
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => setPlantData(data.data));
+  }
+
+  function handleChange(event) {
+    setSearchValue(event.target.value);
+  }
+  // console.log(searchValue)
+
+  return (
+    <div>
+      <input
+        className="plantInput"
+        type="text"
+        placeholder="type a indoor plant breed.."
+        value={searchValue}
+        onChange={handleChange}
+      />
+      <button onClick={() => handleSearch()}>search</button>
+    </div>
+  );
 }
-
-return ( <div>
-    <input className='plantInput' ref={inputRef} type='text' placeholder='type a plant..' value={searchValue}
-    onChange={handleChange}/>
-</div>)
-
-}
-

@@ -1,6 +1,6 @@
-import React from 'react;
 
-export default function Plants({plant}) {
+
+export default function Card({plant}) {
     return (
         <div className='card'>
             <img className='cardImage' src={plant.default_image.small_url} alt={plant.common_name} /> {/* /*  I think this is correct route through the data set for the image*/ }
