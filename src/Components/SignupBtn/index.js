@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './style.css';
 
@@ -5,7 +6,8 @@ import './style.css';
 function SignupBtn(props) {
     return (
         
-        <button className={props.className} >
+        <button disabled={props.isDisabled}
+        className={props.className} >
         {props.text}
       </button>
       

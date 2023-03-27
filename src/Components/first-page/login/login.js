@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import SignUpBtn from "../../SignupBtn";
 import "./login.css"
-import { Link } from 'react-router-dom';
-import SignupBtn from "../../SignupBtn";
+import { BrowserRouter as Router, useNavigate } from 'react-router-dom';
 
 const Login= () =>{
 //adding a username Usestate
@@ -13,23 +11,25 @@ const Login= () =>{
   const [user, setUser] = useState()
 
 
+  const history = useNavigate()
+
   //the asscunc handlesubmit function
   const handleSubmit = async e => {
     
       e.preventDefault();
     
-    setUser()
-     const user = { username, password };
-    console.log(user)
-    localStorage.setItem(username,password );
-    
+
+   localStorage.setItem('username', "Elizaveta");
+   localStorage.setItem('password', "password");
+
+ if (username === "Elizaveta" && password === "password") {
+   history('/your-plants')
+   }else{
+      console.log("wrong username or password")
+  }
+
     };
   
-
-// if someone is already logged in the persons username will be displayed
-  if (user) {
-    return <div> Welcome back {user.name}! </div>;
-  }
 
   // if no ones is logged in, the login form will be shown
   return (
@@ -51,15 +51,17 @@ const Login= () =>{
           placeholder="Password"
           onChange={({ target }) => setPassword(target.value)}
         />
+
+<input type="submit" className="Login" value="Submit"></input>
       </div>
    
 
-      <SignUpBtn onClick={handleSubmit} className="Login" text= 'Login'></SignUpBtn>
+    
    
     </form>
   );}
 
-
+  
   export default Login
   
  // < Link to="/your-plants"></Link>  
