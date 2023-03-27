@@ -2,9 +2,10 @@ import React from "react";
 import "./style.css";
 
 
+
 export default function Card( {plant} ) {
  function favourites(){
-  const myplantsString=localStorage.getItem('myplants')
+  const myplantsString=localStorage.gettem('myplants')
   const myplants=myplantsString ? JSON.parse(myplantsString) : [];
   myplants.push(plant);
 localStorage.setItem("myplants",JSON.stringify(myplants))

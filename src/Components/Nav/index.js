@@ -1,6 +1,8 @@
 import React from 'react';
 import Row from '../Row';
 import './style.css';
+import SignupBtn from "../SignupBtn";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -9,8 +11,8 @@ function Navbar() {
         <Row>
             <div id="logo">Plantly</div>
             <ul id="nav-links">
-                <li><a href="https://www.google.com/">link 1</a></li>
-                <li><a href = "https://www.google.com/">link 2</a></li>
+              <Link to="/">  <SignupBtn/></Link>
+              <Link to="/">  <SignupBtn text="Log Out"/></Link>
             </ul>
         </Row>
       </header>
