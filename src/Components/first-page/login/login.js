@@ -1,34 +1,35 @@
 import React, { useState } from "react";
-import SignUpBtn from "../../SignupBtn";
 import "./login.css"
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, useNavigate } from 'react-router-dom';
 
 const Login= () =>{
 //adding a username Usestate
   const [username, setUsername] = useState("");
   //adding a password useState
   const [password, setPassword] = useState("");
-  //setting the user 
-  const [user, setUser] = useState()
+  //setting the error message 
+  const [errorMessage, createErrorMessage] = useState("");
 
+
+  const history = useNavigate()
 
   //the asscunc handlesubmit function
   const handleSubmit = async e => {
     
       e.preventDefault();
-      const user = { username, password };
-    console.log(user)
-    setUser()
-   
-    localStorage.setItem('username', username);
-    localStorage.setItem('password', password);
+    
+
+   localStorage.setItem('username', "partythyme");
+   localStorage.setItem('password', "pass123");
+
+ if (username === "partythyme" && password === "pass123") {
+   history('/your-plants')
+   }else{
+    createErrorMessage("Username or Password is not correct")
+  }
+
     };
   
-
-// if someone is already logged in the persons username will be displayed
-  if (user) {
-    return <div> Welcome back {user.name}! </div>;
-  }
 
   // if no ones is logged in, the login form will be shown
   return (
@@ -50,13 +51,17 @@ const Login= () =>{
           placeholder="Password"
           onChange={({ target }) => setPassword(target.value)}
         />
-      </div>
 
-      < Link to="/your-plants"><SignUpBtn className="Login" text= 'Login'></SignUpBtn></Link>  
+<input type="submit" className="Login" value="Login"></input>
+      </div>
+   
+      {errorMessage && <p className="errormessage">{errorMessage}</p>} {/* creating the error message */}
+    
    
     </form>
   );}
 
-
+  
   export default Login
   
+ 

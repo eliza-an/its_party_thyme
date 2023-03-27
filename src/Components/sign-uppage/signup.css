@@ -37,10 +37,6 @@ h3{
   font-weight: 100;
 }
 
-.backtologin{
-    
-}
-
 
 @media (max-width: 830px) {
 .plantly{
@@ -53,6 +49,9 @@ padding-left: 0% !important;
 font-size: 60px;
 }
 
+h2{
+ padding: 0px !important;   
+}
 
 
 h3{

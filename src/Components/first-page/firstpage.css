@@ -44,6 +44,7 @@ h3{
  justify-content: center;
  
 }
+
 h1{
 padding-left: 0% !important;
 font-size: 60px;
@@ -52,6 +53,7 @@ font-size: 60px;
 h2{
   padding-left: 0%;
   font-size: 30px;
+  margin-left: 0 !important;
 }
 
 h3{
