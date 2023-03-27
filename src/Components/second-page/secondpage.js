@@ -1,12 +1,15 @@
+//React
 import React, {Fragment} from "react";
 
+//Components
 import Nav from "../Nav";
 import Column from "../Column";
 import Grid from "../Grid";
-import Card from "../Card";
 import Search from "../Search";
+import Plants from "../Plants";
 
-// import "style.css"
+
+//Data
 import {data} from '../data'
 
 
@@ -17,10 +20,11 @@ const Secondpage = () =>{
             <Nav/>
             <Column>
                 <Search/>
+                
             </Column>
             <Column>
-                <Grid>
-                    <Card plants={data}/>
+                <Grid>   
+                    <Plants/>
                 </Grid>
             </Column>
         </Fragment>
@@ -28,4 +32,4 @@ const Secondpage = () =>{
 
 }
 
-export default Secondpage
+export default Secondpage;
