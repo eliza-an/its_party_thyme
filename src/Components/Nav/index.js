@@ -5,7 +5,7 @@ import './style.css';
 function Navbar() {
   return (
     <div>
-      <header id="header-full" class="nav">
+      <header id="header-full" className="nav">
         <Row>
             <div id="logo">Plantly</div>
             <ul id="nav-links">
@@ -15,7 +15,7 @@ function Navbar() {
         </Row>
       </header>
 
-      <header id="header-mobile" class="nav">
+      <header id="header-mobile" className="nav">
         <Row>
             <div id="logo">Plantly</div>
         </Row>  

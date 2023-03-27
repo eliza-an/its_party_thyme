@@ -16,10 +16,10 @@ const Login= () =>{
   const handleSubmit = async e => {
     
       e.preventDefault();
-      const user = { username, password };
-    console.log(user)
+    
     setUser()
-   
+     const user = { username, password };
+    console.log(user)
     localStorage.setItem('username', username);
     localStorage.setItem('password', password);
     };
