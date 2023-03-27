@@ -23,7 +23,7 @@ const Login= () =>{
    localStorage.setItem('password', "pass123");
 
  if (username === "partythyme" && password === "pass123") {
-   history('/your-plants')
+   history('/browse')
    }else{
     createErrorMessage("Username or Password is not correct")
   }

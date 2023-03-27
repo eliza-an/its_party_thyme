@@ -2,8 +2,16 @@ import React from "react";
 import "./style.css";
 
 
+
 export default function Card( {plant} ) {
-  return (
+ function favourites(){
+  const myplantsString=localStorage.getItem('myplants')
+  const myplants=myplantsString ? JSON.parse(myplantsString) : [];
+  myplants.push(plant);
+localStorage.setItem("myplants",JSON.stringify(myplants))
+
+} 
+return (
 
       <div className="card" key={plant.id} >
         <div className="image-container">
@@ -13,8 +21,11 @@ export default function Card( {plant} ) {
         <hr className="card-hr"/>
         <p><span className="strong">Water needs: </span>{plant.watering}</p>
         <p><span className="strong">Light: </span>{plant.sunlight}</p>
-        <button className="collectionBtn" href="#">Add to collection</button>
+        <button onClick={favourites} className="collectionBtn">Add to collection</button>
       </div>
 
   );
 }
+
+
+
