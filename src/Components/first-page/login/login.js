@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SignUpBtn from "../../SignupButton";
+import SignUpBtn from "../../SignupBtn";
 import "./login.css"
 import { Link } from 'react-router-dom';
 
