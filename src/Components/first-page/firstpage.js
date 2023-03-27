@@ -1,34 +1,29 @@
-import "../first-page/firstpage.css"
-import React from "react";
+import React, {Fragment} from "react";
 import Login from "../first-page/login/login";
-//import Column from "../Column";
 import { Link } from 'react-router-dom';
+import SignupBtn from "../SignupBtn";
 
-import SignUpBtn from "../signupButton/index";
+// CSS
+import "../first-page/firstpage.css"
 
 
 const Firstpage= () =>{
 
-return(
+    return(
+        <Fragment className="First">
+            <img className="flowerImg" alt="flower" src="./img/flower.jpg"></img>< div className="plantly"><h1>PLANTLY</h1></div> 
+            <div className="plantly"><h2>Sign up Now</h2></div>
+            <div className="plantly"><h3>Commit to keeping happier Healthier plants today!</h3></div>
+            <div className="plantly"><Login /></div>
+            <div className="plantly"> 
+            <Link to="/sign-up">
+                <SignupBtn className="signUpBtn" text= 'Sign up'>
+                </SignupBtn>
+            </Link>
+            </div>  
+        </Fragment>
+    );
+};
 
-<div className="First">
-    <img className="flowerImg" alt="flower" src="./img/flower.jpg"></img>< div className="plantly"><h1>PLANTLY</h1></div> 
-    <div className="plantly"><h2>Sign up Now</h2></div>
-    <div className="plantly"><h3>Commit to keeping happier Healthier plants today!</h3></div>
-    <div className="plantly"><Login /></div>
-    <div className="plantly"> 
-    <Link to="/sign-up">
-     <SignUpBtn className="signUpBtn" text= 'Sign up'>
-        </SignUpBtn>
-    </Link>
-        </div>  
-</div>
-
-)
-
-
-
-}
-
-export default Firstpage
+export default Firstpage;
 
