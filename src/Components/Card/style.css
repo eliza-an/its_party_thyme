@@ -56,7 +56,7 @@
   }
 
   .collectionBtn:hover  .collectionBtn:focus {
-    background-color: orangered;
+    background-color: #fc6600;
   }
 
   .strong {
