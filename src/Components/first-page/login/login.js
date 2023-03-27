@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SignUpBtn from "../../SignupBtn";
 import "./login.css"
 import { Link } from 'react-router-dom';
+import SignupBtn from "../../SignupBtn";
 
 const Login= () =>{
 //adding a username Usestate
@@ -20,8 +21,8 @@ const Login= () =>{
     setUser()
      const user = { username, password };
     console.log(user)
-    localStorage.setItem('username', username);
-    localStorage.setItem('password', password);
+    localStorage.setItem(username,password );
+    
     };
   
 
@@ -51,8 +52,9 @@ const Login= () =>{
           onChange={({ target }) => setPassword(target.value)}
         />
       </div>
+   
 
-      < Link to="/your-plants"><SignUpBtn className="Login" text= 'Login'></SignUpBtn></Link>  
+      <SignUpBtn onClick={handleSubmit} className="Login" text= 'Login'></SignUpBtn>
    
     </form>
   );}
@@ -60,3 +62,4 @@ const Login= () =>{
 
   export default Login
   
+ // < Link to="/your-plants"></Link>  
