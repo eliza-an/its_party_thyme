@@ -4,7 +4,7 @@ import Login from "../first-page/login/login";
 //import Column from "../Column";
 import { Link } from 'react-router-dom';
 
-import SignUpBtn from "../SignupButton";
+import SignupBtn from "../SignupButton";
 
 
 const Firstpage= () =>{
@@ -18,8 +18,8 @@ return(
     <div className="plantly"><Login /></div>
     <div className="plantly"> 
     <Link to="/sign-up">
-     <SignUpBtn className="signUpBtn" text= 'Sign up'>
-        </SignUpBtn>
+        <SignupBtn className="signUpBtn" text= 'Sign up'>
+        </SignupBtn>
     </Link>
         </div>  
 </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 
-function SignUpBtn(props) {
+function SignupBtn(props) {
     return (
         
         <button className={props.className} >
@@ -11,4 +11,4 @@ function SignUpBtn(props) {
       
     )
 }
-export default SignUpBtn
+export default SignupBtn
