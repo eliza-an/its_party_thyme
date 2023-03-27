@@ -3,12 +3,13 @@ import React, {Fragment} from "react";
 import Nav from "../Nav";
 import Column from "../Column";
 import Grid from "../Grid";
-import Card from "../Card";
+import Plant from "../Plant";
+import Plants from "../Plants";
 
 // import "style.css"
 
 
-const Secondpage = () =>{
+const Secondpage = ( ) =>{
 
     return(
         <Fragment>
@@ -17,7 +18,7 @@ const Secondpage = () =>{
             </Column>
             <Column>
                 <Grid>
-                    <Card></Card>
+                    <Plant ></Plant>
                 </Grid>
             </Column>
         </Fragment>
@@ -26,4 +27,3 @@ const Secondpage = () =>{
 }
 
 export default Secondpage
-

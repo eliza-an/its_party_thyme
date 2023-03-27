@@ -1,32 +1,44 @@
-import React from 'react';
+import React, { useState } from "react";
 import { useQuery } from 'react-query';
+import Plant from "../Plant";
 
 export default function Plants() {
-        
-    const fetchPlants = async () => {
-        //To fetch fresh data on every fetch request using cache: no-store
-        const response = await fetch("https://perenual.com/api/species-list?page=1&key=sk-htIX6419d1b8cfc9f275", { cache: 'no-store' });
-        return response.json(); 
-    };
+  const [page, setPage] = useState(40);
 
-    const {data, status} = useQuery("plants", fetchPlants);
-
-    const plantList = {data};
-    console.log(plantList);
-
-
-    // const plantID = plantList.data.id
-    
-    if(status === "loading") {
-        <div>Loading...</div>
-    };
-
-    if(status === "error") {
-    <div>Error</div>
-    };
-
-    return (
-        <pre>{JSON.stringify(data, null, 2)}</pre>
+  const fetchPlants = async ({ queryKey }) => {
+    const response = await fetch(
+        'https://perenual.com/api/species-list?page=1&key=sk-htIX6419d1b8cfc9f275'
     );
+    return response.json();
+  };
 
-};
+
+
+  const { data: plantInfo, status, isPreviousData } = useQuery(
+    ["plants", page],
+    fetchPlants,
+    {
+      keepPreviousData: true,
+    }
+  );
+
+  console.log(plantInfo)
+
+  if (status === "loading") {
+    return <div>Loading...</div>;
+  }
+
+  if (status === "error") {
+    return <div>Oops - something has gone wrong</div>;
+  }
+
+  return (
+    <div className="plants">
+      {plantInfo.data.map((plantData) => (
+        <div>
+        <Plant plantData={plantData}> </Plant>
+        </div>
+      ))}
+    </div>
+  );
+}
