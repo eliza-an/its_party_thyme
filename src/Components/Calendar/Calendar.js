@@ -12,7 +12,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 let username = 'username';
 const localizer = momentLocalizer(moment);
-function App() {
+function Calendar() {
   let localKeys = Object.keys(localStorage);
   let house;
   // check if username exist                  if yes  then house = username value             if no then create username value []
@@ -56,4 +56,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default Calendar;
