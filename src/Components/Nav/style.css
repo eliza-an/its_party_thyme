@@ -7,10 +7,6 @@
     margin: 0;
 }
 
-#nav-links li {
-    padding: 10px;
-}
-
 #logo {
     font-family: 'Cardo', serif;
     color: var(--offWhite);
@@ -46,4 +42,16 @@
     #header-full {
       display: none;
     }
+}
+
+#nav-links button {
+    border: 2px solid var(--offWhite);
+    background-color: transparent;
+    color: var(--offWhite);
+    margin: 2px;    
+}
+
+#nav-links button:hover {
+    background-color: var(--offWhiteTransparent);
+    color: var(--forestGreen);
 }

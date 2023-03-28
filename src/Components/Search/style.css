@@ -2,6 +2,17 @@
     width: calc(100% - 2rem);
     transition: box-shadow 0.1s; 
 }
+.searchBtn {
+    background-color: var(--actionOrange);
+    color: var(--offWhite);
+    position: relative;
+    text-align: center;
+    margin:  5px 0;   
+}
 
+.searchBtn:hover {
+    background-color: var(--offWhite);
+    color: var(--actionOrange);
+}
 
 

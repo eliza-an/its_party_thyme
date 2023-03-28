@@ -19,6 +19,7 @@ console.log(plantList);
     <>
       <Nav />
       <Column>
+      <h3>Search for a houseplant & add it to your collection</h3>
       
       <Search
         searchValue={searchValue}

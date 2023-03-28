@@ -6,6 +6,8 @@ import SignUp from "./Components/sign-uppage/signuppage";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Favourites from './Components/Favourites/favourite';
+
+
 const client = new QueryClient()
 
 

@@ -1,20 +1,5 @@
-.login{
-    /* padding-left: 100px; */
-}
-
-.username{
-   /* width: 400px; 
-   padding: 5px;
-   margin-bottom: 20px;
-   border-radius: 5px;
-   border:1px white */
-}
 
 .password{
-    /* width: 400px; 
-    padding: 5px;
-    border-radius: 5px;
-    border:1px white */
     border-radius:  7px 0 0 7px ;
 }
 
@@ -30,6 +15,7 @@ input[type="submit"] {
    background-color: var(--offWhite);
    border-radius: 0 7px 7px 0;
    color:#5dbe6a;
+   font-weight: bold;
 }
 
 @media (max-width: 830px) {
@@ -51,4 +37,4 @@ input[type="submit"] {
     padding-left: 0%;
  }
 
-  }
+}

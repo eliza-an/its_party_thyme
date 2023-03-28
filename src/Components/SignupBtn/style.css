@@ -1,11 +1,14 @@
-.signupBtn {
+#signupBtn {
     background-color: var(--actionOrange);
-    align-items: center;
     color: var(--offWhite);
-    font-family: Futura Md BT !important;
     position: relative;
     text-align: center;
-    margin: 5px;   
+    margin:  5px auto;
+    padding: 15px 25px;
 }
 
+#signupBtn:hover {
+    background-color: var(--offWhite);
+    color: var(--actionOrange);
+}
 

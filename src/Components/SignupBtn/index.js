@@ -6,7 +6,7 @@ import './style.css';
 function signupBtn(props) {
     return (
         
-        <button disabled={props.isDisabled}
+        <button id="signupBtn" disabled={props.isDisabled}
         className={props.className} >
         {props.text}
       </button>
