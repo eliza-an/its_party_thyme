@@ -1,31 +1,21 @@
-.login{
-    padding-left: 100px;
-}
-
-.username{
-   width: 400px; 
-   padding: 5px;
-   margin-bottom: 20px;
-   border-radius: 5px;
-   border:1px white
-}
 
 .password{
-    width: 400px; 
-    padding: 5px;
-    border-radius: 5px;
-    border:1px white
+    border-radius:  7px 0 0 7px ;
 }
 
-.Login{
-margin-top: 10px;
-background-color: #5dbe6a;
-border: none;
-color: white;
-border-radius: 2px;
-padding: 7px;
-padding-left: 15px;
-padding-right: 15px;
+.login{
+   margin-top: 10px;
+   background-color: #5dbe6a;
+   border: none;
+   color: var(--offWhite);
+}
+
+input[type="submit"] {
+   transition: box-shadow 0.1s; 
+   background-color: var(--offWhite);
+   border-radius: 0 7px 7px 0;
+   color:#5dbe6a;
+   font-weight: bold;
 }
 
 @media (max-width: 830px) {
@@ -47,4 +37,4 @@ padding-right: 15px;
     padding-left: 0%;
  }
 
-  }
+}

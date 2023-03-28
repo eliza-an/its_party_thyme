@@ -1,8 +1,8 @@
-.signUpBtn {
-    background-color: #ff6700;
+.signupBtn {
+    background-color: var(--actionOrange);
     align-items: center;
     border: 1px solid transparent;
-    color: #fff;
+    color: var(--offWhite);
     cursor: pointer;
     font-family: Futura Md BT;
     font-size: 30pt;

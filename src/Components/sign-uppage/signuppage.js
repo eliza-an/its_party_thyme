@@ -1,9 +1,8 @@
 import "./signup.css"
 import React from "react";
 import Login from "../first-page/login/login";
-//import Column from "../Column";
 
-import SignUpBtn from "../SignupBtn";
+import SignupBtn from "../SignupBtn";
 import { Link } from "react-router-dom";
 
 
@@ -16,7 +15,7 @@ return(
 
     <div className="plantly"><h3>Please enter your name and create a password</h3></div>
     <div className="plantly"><Login /></div>
-    <div className="plantly"><Link to= "/"><SignUpBtn className="signUpBtn" text= ' <== Already have an account?'></SignUpBtn></Link> </div>  
+    <div className="plantly"><Link to= "/"><SignupBtn className="signupBtn" text= ' <== Already have an account?'></SignupBtn></Link> </div>  
 </div>
 
 )

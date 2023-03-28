@@ -3,15 +3,14 @@ import React from 'react';
 import './style.css';
 
 
-function SignupBtn(props) {
-
-  return (
+function signupBtn(props) {
+    return (
         
-        <button disabled={props.isDisabled}
+        <button id="signupBtn" disabled={props.isDisabled}
         className={props.className} >
         {props.text}
       </button>
       
     )
 }
-export default SignupBtn
+export default signupBtn
