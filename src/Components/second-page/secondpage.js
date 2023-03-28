@@ -28,13 +28,13 @@ console.log(plantList);
       </Column>
    
       <Column>
-      <Grid>
+        <Grid>
         {plantList.length === 0 ? (<h4>No plants to display</h4>) : plantList.map((plant) => (
           <Card plant={plant} />
           
         ))}
         </Grid>
-        </Column>
+      </Column>
         
     </>
   );
