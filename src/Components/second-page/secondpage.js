@@ -14,7 +14,6 @@ function Secondpage() {
 console.log(plantList);  
 
 
-
   return (
     <>
       <Nav />
