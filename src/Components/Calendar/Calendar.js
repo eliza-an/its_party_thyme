@@ -1,18 +1,22 @@
-import './App.css';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import './Calendar.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+
+import Navbar from '../Nav';
+// import Row from '../Row';
+import Column from '../Column';
 
 // npm i react-datepicker
 // npm i react-big-calendar
 
-let username = 'username';
+let username = 'partythyme';
 const localizer = momentLocalizer(moment);
-function Calendar() {
+function CreateCalendar() {
   let localKeys = Object.keys(localStorage);
   let house;
   // check if username exist                  if yes  then house = username value             if no then create username value []
@@ -39,21 +43,24 @@ function Calendar() {
   console.log(plants);
   return (
     <div className="App">
+      <Navbar />
       <div>
-        <div>
+        <Column>
+          <h2>add new plant</h2>
+          <div>
+            {/* update with data the existing empty plant variable */}
+            <input type="text" placeholder="Plant" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })} />
+            <DatePicker placeholderText="Date" selected={plant.start} onChange={(start) => setPlant({ ...plant, start: start })} />
+            <DatePicker placeholderText="Date" selected={plant.end} onChange={(end) => setPlant({ ...plant, end: end })} />
+            <button onClick={createArray}>Add Plant</button>
+            {/* <button onClick={createLocalStorage}>Save Data</button> */}
+          </div>
+        </Column>
+        <Column>
           <Calendar localizer={localizer} events={plants} startAccessor="start" endAccessor="end" style={{ margin: '100px', height: 500 }} />
-        </div>
-        <h1>add new plant</h1>
-        <div>
-          {/* update with data the existing empty plant variable */}
-          <input type="text" placeholder="Plant" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })} />
-          <DatePicker placeholderText="Date" selected={plant.start} onChange={(start) => setPlant({ ...plant, start: start })} />
-          <DatePicker placeholderText="Date" selected={plant.end} onChange={(end) => setPlant({ ...plant, end: end })} />
-          <button onClick={createArray}>Add Plant</button>
-          {/* <button onClick={createLocalStorage}>Save Data</button> */}
-        </div>
+        </Column>
       </div>
     </div>
   );
 }
-export default Calendar;
+export default CreateCalendar;
