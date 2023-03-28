@@ -28,7 +28,7 @@ export default function Search({searchValue, setPlantData, setSearchValue}) {
         value={searchValue}
         onChange={handleChange}
       />
-      <button onClick={() => handleSearch()}>search</button>
+      <button className="searchBtn" onClick={() => handleSearch()}>search</button>
     </div>
   );
 }

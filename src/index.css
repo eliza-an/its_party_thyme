@@ -2,8 +2,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=DotGothic16&display=swap');
 
 body {
@@ -22,18 +21,19 @@ body {
   --forestGreen: #34554a;
   --actionOrange: #ff6700;
   --offWhite: #fffdfb;
+  --offWhiteTransparent: #fffdfb86;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cardo', serif;
+  padding: 0;
+  margin: 5px 0;
+}
 
-  /* padding-top: 90px;
-  margin-top: 0%;
-  font-weight: 900;
-  font-size: 80px;
-  padding-left: 110px;
-  margin-bottom: 10px; */
-  
+p {
+  font-family: 'Gentium Book Plus', serif;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 a {
@@ -52,10 +52,6 @@ a:hover {
 
 h1{
   font-size: 90px;
-  /* padding-left: 185px;
-  font-size: 40px;
-  padding-top: 0;
-  margin-bottom: 4px; */
 }
 
 input {
@@ -69,16 +65,15 @@ input {
 }
 
 button {
-  padding: 10px 15px;
+  padding: 15px 15px;
   border: none;
   font-size: 16px;
+  font-weight: bold;
   border-radius: 7px;
   cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 
-button .action {
-  background-color: ;
-}
 
 
 

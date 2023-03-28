@@ -12,16 +12,15 @@ localStorage.setItem("myplants",JSON.stringify(myplants))
 
 } 
 return (
-
       <div className="card" key={plant.id} >
         <div className="image-container">
             <img src={plant.default_image?.thumbnail} alt=""/>
         </div>
         <h3>{plant.common_name}</h3>
         <hr className="card-hr"/>
-        <p><span className="strong">Water needs: </span>{plant.watering}</p>
-        <p><span className="strong">Light: </span>{plant.sunlight}</p>
-        <button onClick={favourites} className="collectionBtn">Add to collection</button>
+        <p><span className="strong"><i className="fa fa-droplet"></i>Water needs: </span>{plant.watering}</p>
+        <p><i className="fa fa-sun"></i><span className="strong">Likes: </span>{plant.sunlight}</p>
+        <button onClick={favourites} id="collectionBtn"><i className="fa fa-plus"></i></button>
       </div>
 
   );

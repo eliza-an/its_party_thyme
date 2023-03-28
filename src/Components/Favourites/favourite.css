@@ -1,0 +1,51 @@
+.my-plants {
+    text-align: left;
+}
+
+
+#favourites-card {
+    height: 230px;
+}
+
+  .image-container {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+
+  }
+
+  .favourites-card h3 {
+    padding-left: 0;
+    margin: 10px 10px;
+    color: var(--forestGreen);
+    font-size: 18px;
+    font-family: 'Cardo', serif;
+  }
+
+  .favourites-card-hr {
+    width: 30%;
+    color: rgb(243, 241, 241);
+  }
+
+  .favourites-card p {
+    margin: 0 10px 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .collectionBtn {
+    background-color: rgb(243, 241, 241);
+    margin: 25px 20px;
+    color: var(--forestGreen);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .collectionBtn:hover  .collectionBtn:focus {
+    background-color: #fc6600;
+  }
+
+  .strong {
+    font-weight: bold;
+  }

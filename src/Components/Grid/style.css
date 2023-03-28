@@ -1,29 +1,18 @@
 
 .grid-container {
   max-height: 80vh;
+  width: 100%;
+  padding: 10px;
   overflow:scroll;
   display: grid;
   grid-template-areas: 
   "card card"
-    "card card"
-    "card card"
-    "card card"
+  "card card"
+  "card card"
+  "card card"
   ;
 }
 
-
-/* @media (min-width: 728px) {
-  .grid-container {
-    display: grid;
-    grid-template-areas: 
-    "card card"
-    "card card"
-    "card card"
-    "card card"
-    ;
-  }
-
-} */
 
 @media (min-width: 700px) {
   .grid-container {
