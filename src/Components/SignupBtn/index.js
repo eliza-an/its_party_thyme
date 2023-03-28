@@ -1,10 +1,11 @@
-
+import { useLocation } from 'react-router-dom';
 import React from 'react';
 import './style.css';
 
 
 function SignupBtn(props) {
-    return (
+
+  return (
         
         <button disabled={props.isDisabled}
         className={props.className} >
