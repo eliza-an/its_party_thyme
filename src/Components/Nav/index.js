@@ -4,7 +4,10 @@ import './style.css';
 import SignupBtn from "../SignupBtn";
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+
+function Navbar(props) {
+
+
   return (
     <div>
       <header id="header-full" className="nav">
@@ -37,3 +40,6 @@ function Navbar() {
 }
 
 export default Navbar;
+
+
+
