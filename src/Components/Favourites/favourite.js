@@ -8,7 +8,7 @@ import Grid from "../Grid";
 import "../Favourites/favourite.css"
 
 
-const Favourites= () =>{
+const Favourites = () =>{
    const myplantsString = localStorage.getItem('myplants');
     const myplants = myplantsString? JSON.parse(myplantsString) : [];
 
@@ -17,7 +17,7 @@ const Favourites= () =>{
     index === self.findIndex((p) => (
       p.id === plant.id
     ))
-  );
+    );
     return(
       <div>
         <Navbar/>
