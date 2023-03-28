@@ -3,7 +3,7 @@ import React from 'react';
 import './style.css';
 
 
-function SignupBtn(props) {
+function signupBtn(props) {
     return (
         
         <button disabled={props.isDisabled}
@@ -13,4 +13,4 @@ function SignupBtn(props) {
       
     )
 }
-export default SignupBtn
+export default signupBtn

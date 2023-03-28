@@ -1,9 +1,8 @@
 import React from "react";
 import Navbar from "../Nav";
+import "../Card/style.css";
 
 
-
- 
 
 const Favourites= () =>{
    const myplantsString = localStorage.getItem('myplants');
@@ -20,7 +19,7 @@ const Favourites= () =>{
       <Navbar/>
        <div>
             {uniqueplants.map(plant => (
-            <div key={plant.id} >
+            <div className="card" key={plant.id} >
             <div className="image-container">
                 <img src={plant.default_image?.thumbnail} alt=""/>
             </div>

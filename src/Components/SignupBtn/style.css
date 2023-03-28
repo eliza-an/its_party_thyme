@@ -1,20 +1,11 @@
-.signUpBtn {
-    background-color: #ff6700;
+.signupBtn {
+    background-color: var(--actionOrange);
     align-items: center;
-    border: 1px solid transparent;
-    color: #fff;
-    cursor: pointer;
+    color: var(--offWhite);
     font-family: Futura Md BT !important;
-    font-size: 20px;
     position: relative;
-    border-radius: 100px;
-    max-width: 600px;
     text-align: center;
-    margin-left: 210px;
-    padding:10px !important;
-    margin-top: 30px;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-
+    margin: 5px;   
 }
+
 

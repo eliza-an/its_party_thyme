@@ -13,7 +13,7 @@
     height: 300px;
     width: 150px;
     background-color:white;
-    color: #34554a;
+    color: var(--forestGreen);
     border: 10px solid white;
     border-radius: 10px;
     text-align: center;
@@ -30,7 +30,7 @@
   .card h3 {
     padding-left: 0;
     margin: 10px 10px;
-    color: #34554a;
+    color: var(--forestGreen);
     font-size: 18px;
     font-family: 'Cardo', serif;
   }
@@ -50,7 +50,7 @@
   .collectionBtn {
     background-color: rgb(243, 241, 241);
     margin: 25px 20px;
-    color: #34554a;
+    color: var(--forestGreen);
     border-radius: 5px;
     padding: 10px;
   }

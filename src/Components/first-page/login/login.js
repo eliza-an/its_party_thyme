@@ -33,7 +33,7 @@ const Login= () =>{
 
   // if no ones is logged in, the login form will be shown
   return (
-    <form className="login" onSubmit={handleSubmit}>
+    <form className="login-form" onSubmit={handleSubmit}>
       {/* The user will imut their username using this imput */}
      
       <input className="username"
@@ -42,7 +42,7 @@ const Login= () =>{
         placeholder="Full Name"
         onChange={({ target }) => setUsername(target.value)}
       />
-      <div>
+      <div className="submit-inputs">
        
         {/* The user will enter thier password with this input */}
         <input className="password"
@@ -52,7 +52,11 @@ const Login= () =>{
           onChange={({ target }) => setPassword(target.value)}
         />
 
-<input type="submit" className="Login" value="Login"></input>
+        <input 
+        type="submit" 
+        className="login" 
+        value="login">
+        </input>
       </div>
    
       {errorMessage && <p className="errormessage">{errorMessage}</p>} {/* creating the error message */}
