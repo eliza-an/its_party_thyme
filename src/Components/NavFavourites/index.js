@@ -5,20 +5,20 @@ import SignupBtn from '../SignupBtn';
 import { Link } from 'react-router-dom';
 
 
-function Navbar(props) {
+function NavFavourites(props) {
 
 
   return (
     <Fragment>
-      <div id="pageOne">
+      <div id="favouritesPage">
         <header id="header-full" className="nav">
           <Container>
             <div id="logo">Plantly</div>
             <ul id="nav-links">
               <li>
-                <Link to="/your-plants">
+                <Link to="/browse">
                   {' '}
-                  <SignupBtn text="Your Plants" />
+                  <SignupBtn text="Find Plants" />
                 </Link>
               </li>
               <li>
@@ -38,9 +38,9 @@ function Navbar(props) {
           <Container>
             <ul id="nav-links">
               <li>
-                <Link to="/your-plants">
+                <Link to="/browse">
                   {' '}
-                  <SignupBtn text="Your Plants" />
+                  <SignupBtn text="Find Plants" />
                 </Link>
               </li>
               <li>
@@ -53,12 +53,11 @@ function Navbar(props) {
           </Container>
         </header>
       </div>
-
     </Fragment>
   );
 }
 
-export default Navbar;
+export default NavFavourites;
 
 
 

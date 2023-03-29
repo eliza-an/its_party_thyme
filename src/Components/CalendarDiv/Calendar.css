@@ -18,20 +18,17 @@
   border-radius: 7px;
   min-height: 350px;
 }
-.calendar {
-  padding: 5%;
-}
 
-.inline {
-  display: inline-flex;
-  padding: 0;
+.calendar {
+  padding: 5% 10%;
+  max-width: 400px;
+  margin: auto;
 }
 
 .select {
   padding: 10px;
   height: 40px;
 }
-
 
 .react-datepicker-wrapper input {
   padding: 10px;
