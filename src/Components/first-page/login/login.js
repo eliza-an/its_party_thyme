@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./login.css"
 import { useNavigate } from 'react-router-dom';
 
+
 const Login= () =>{
 //adding a username Usestate
   const [username, setUsername] = useState("");
@@ -19,8 +20,6 @@ const Login= () =>{
       e.preventDefault();
     
 
-   localStorage.setItem('username', "partythyme");
-   localStorage.setItem('password', "pass123");
 
  if (username === "partythyme" && password === "pass123") {
    history('/browse')

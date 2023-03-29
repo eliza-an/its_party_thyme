@@ -2,11 +2,11 @@ import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { useState } from 'react';
-import { useEffect } from 'react';
 import './Calendar.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Fragment } from 'react';
+import { useLocalStorage } from './useLocalStorage';
 
 // npm i react-datepicker
 // npm i react-big-calendar
@@ -15,27 +15,42 @@ let username = 'partythyme';
 
 const localizer = momentLocalizer(moment);
 function CalendarDiv() {
-  let localKeys = Object.keys(localStorage);
-  let house;
-  // check if username exist                  if yes  then house = username value             if no then create username value []
-  localKeys.includes(username) ? (house = JSON.parse(localStorage.getItem(username))) : localStorage.setItem(username, '[]');
-  //  check if username exist                if yes  then house = username value
-  localKeys.includes(username) ? (house = JSON.parse(localStorage.getItem(username))) : console.log('ej ej something is not okey Pete');
-
-
-
+  
   // create one plant
+  
   const [plant, setPlant] = useState({ title: '', start: '', end: '' });
+  const [plants, setAllPlant]=useLocalStorage(username, '')
   // create group of plants (when you with click button createArray run) and adds the data to "house" variable
-  const [plants, setAllPlant] = useState(house);
+//   const [plants, setAllPlant] = useState(() =>{
+// let house =[];
+//   let localKeys = Object.keys(localStorage); 
+//   console.log(localKeys)
+//   if(localKeys.includes(username)){
+
+//  let house= localStorage.getItem(username)
+
+// }
+
+//   // check if username exist                  if yes  then house = username value             if no then create username value []
+//   // localKeys.includes(username) ? (house = JSON.parse(localStorage.getItem(username))) : localStorage.setItem(username, '[]');
+//   console.log(house)
+// return house ;
+
+
+//   });
   const createArray = () => {
     // all the existing plants plus add the new plant
     setAllPlant([...plants, plant]);
   };
 
-  useEffect(() => {
-    localStorage.setItem(username, JSON.stringify(plants));
-  }, [plants]);
+
+
+  // useEffect(() => {
+    
+  //   localStorage.setItem(username, JSON.stringify(plants));
+  
+    
+  // }, [plants]);
 
   return (
     <Fragment>
