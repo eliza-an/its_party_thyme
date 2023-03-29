@@ -12,7 +12,6 @@ import { Fragment } from 'react';
 // npm i react-big-calendar
 
 let username = 'partythyme';
-
 const localizer = momentLocalizer(moment);
 const getStorage = () => {
   let items = localStorage.getItem(username);
