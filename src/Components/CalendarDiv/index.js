@@ -12,25 +12,25 @@ import { Fragment } from 'react';
 // npm i react-big-calendar
 
 let username = 'partythyme';
-let house;
 
 const localizer = momentLocalizer(moment);
+const getStorage = () => {
+  let items = localStorage.getItem(username);
+  if (items) {
+    items = JSON.parse(localStorage.getItem(username));
+  } else {
+    items = [];
+  }
+  return items;
+};
+
 function CalendarDiv() {
-  // create one plant
   const [plant, setPlant] = useState({ title: '', start: '', end: '' });
-  // create group of plants (when you with click button createArray run) and adds the data to "house" variable
-  const [plants, setAllPlant] = useState(house);
+  const [plants, setAllPlant] = useState(getStorage());
   const createArray = () => {
-    // all the existing plants plus add the new plant
     setAllPlant([...plants, plant]);
   };
-  useEffect(() => {
-    let localKeys = Object.keys(localStorage);
-    // check if username exist                  if yes  then house = username value             if no then create username value []
-    localKeys.includes(username) ? (house = JSON.parse(localStorage.getItem(username))) : localStorage.setItem(username, '[]');
-    //  check if username exist                if yes  then house = username value
-    // localKeys.includes(username) ? (house = JSON.parse(localStorage.getItem(username))) : console.log('ej ej something is not okey Pete');
-  }, []);
+
   useEffect(() => {
     localStorage.setItem(username, JSON.stringify(plants));
   }, [plants]);
@@ -40,7 +40,6 @@ function CalendarDiv() {
       <div>
         <h3 className="sub-header">Add a watering</h3>
         <div>
-          {/* update with data the existing empty plant variable */}
           <input type="text" placeholder="Plant" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })} />
           <span className="inline">
             <DatePicker placeholderText="Date" selected={plant.start} onChange={(start) => setPlant({ ...plant, start: start })} />
