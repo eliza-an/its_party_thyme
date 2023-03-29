@@ -43,14 +43,7 @@ function CalendarDiv() {
         <h2>Add a watering</h2>
         <div>
           {/* update with data the existing empty plant variable */}
-          <select className="select" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })}>
-            <option>--select option</option>
-            {plantsArray.map((plant, index) => (
-              <option key={index} value={plant.common_name}>
-                {plant.common_name}
-              </option>
-            ))}
-          </select>
+          <input type="text" placeholder="Plant" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })} />
           <span className="inline">
 
           <DatePicker placeholderText="Date" selected={plant.start} onChange={(start) => setPlant({ ...plant, start: start })} />
