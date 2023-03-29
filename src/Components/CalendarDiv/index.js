@@ -40,7 +40,7 @@ function CalendarDiv() {
   return (
     <Fragment>
       <div>
-        <h2>Add a watering</h2>
+        <h3 className="sub-header">Add a watering</h3>
         <div>
           {/* update with data the existing empty plant variable */}
           <select className="select" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })}>

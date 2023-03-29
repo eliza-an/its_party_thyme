@@ -29,8 +29,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cardo', serif;
   padding: 0;
-  margin: 5px 0;
+  margin: 35px 0 15px 0;
+  text-align: center;
 }
+
 
 p {
   font-family: 'Gentium Book Plus', serif;

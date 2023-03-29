@@ -17,11 +17,12 @@ const Firstpage= () =>{
                 <div className="col-left">
                     <h1>Plantly</h1>
                     <h2>Sign up now & commit to keeping happier, healthier plants today!</h2>
+                    <p>Login in below</p>
                     <Login />
-                    <Link to="/sign-up">
+                    <p>Don't have an account yet? <Link to="/sign-up">
                         <SignupBtn className="signupBtn" text= 'Sign up'>
                         </SignupBtn>
-                    </Link>
+                    </Link></p>
                 </div>
                 </Column>
                     <img className="flowerImg" alt="flower" src="./img/flower.jpg"/>
