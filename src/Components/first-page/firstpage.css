@@ -3,7 +3,7 @@
   width: 50vw;
 }
 
-.Row {
+.Container {
   display: flex;
   flex-direction: row;
 }
@@ -20,7 +20,7 @@
     display: none;
   }
 
-  .Row {
+  .Container {
     padding: 30px;
   }
 

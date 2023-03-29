@@ -9,26 +9,23 @@ import "../first-page/firstpage.css"
 
 
 const Firstpage= () =>{
-
     return(
         <Fragment>
-            <div className="Row">
+            <div className="Container">
                 <Column>
-                <div className="col-left">
-                    <h1>Plantly</h1>
-                    <h2>Sign up now & commit to keeping happier, healthier plants today!</h2>
-                    <Login />
-                    <Link to="/sign-up">
-                        <SignupBtn className="signupBtn" text= 'Sign up'>
-                        </SignupBtn>
-                    </Link>
-                </div>
+                    <div className="col-left">
+                        <h1>Plantly</h1>
+                        <h2>Sign up now & commit to keeping happier, healthier plants today!</h2>
+                        <p>Enter your username & password below to log in</p>
+                        <Login />
+                        <p>Already have an account? <Link to="/sign-up">
+                            <SignupBtn className="signupBtn" text= 'Login here.'></SignupBtn>
+                            {/* <SignupBtn className="signupBtn" text= 'Sign up'></SignupBtn> */}
+                        </Link></p>
+                    </div>
                 </Column>
-            
                     <img className="flowerImg" alt="flower" src="./img/flower.jpg"/>
-                
             </div>
-            
         </Fragment>
     );
 };
