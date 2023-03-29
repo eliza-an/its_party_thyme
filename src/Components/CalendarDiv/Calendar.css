@@ -25,11 +25,6 @@
   margin: auto;
 }
 
-.inline {
-  display: inline-flex;
-  padding: 0;
-}
-
 .select {
   padding: 10px;
   height: 40px;
