@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import './Calendar.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import Column from '../Column';
+import { Fragment } from 'react';
 
 // npm i react-datepicker
 // npm i react-big-calendar
@@ -38,9 +38,9 @@ function CalendarDiv() {
   }, [plants]);
 
   return (
-    <div className="container">
+    <Fragment>
       <div>
-        <h2>add new plant</h2>
+        <h2>Add a watering</h2>
         <div>
           {/* update with data the existing empty plant variable */}
           <select className="select" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })}>
@@ -63,7 +63,7 @@ function CalendarDiv() {
       <div className="calendar">
         <Calendar localizer={localizer} events={plants} startAccessor="start" endAccessor="end" />
       </div>
-    </div>
+      </Fragment>
   );
 }
 export default CalendarDiv;

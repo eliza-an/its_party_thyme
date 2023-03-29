@@ -2,7 +2,6 @@
     text-align: left;
 }
 
-
 #favourites-card {
     height: 230px;
 }
@@ -11,7 +10,6 @@
     height: 150px;
     overflow: hidden;
     border-radius: 10px;
-
   }
 
   .favourites-card h3 {
@@ -43,9 +41,11 @@
   }
 
   .collectionBtn:hover  .collectionBtn:focus {
-    background-color: #fc6600;
+    background-color: var(--actionOrange);
   }
 
   .strong {
     font-weight: bold;
   }
+
+ 

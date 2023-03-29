@@ -1,3 +1,4 @@
+import React, {Fragment} from 'react';
 import "./style.css";
 
 export default function Search({searchValue, setPlantData, setSearchValue}) {
@@ -19,7 +20,7 @@ export default function Search({searchValue, setPlantData, setSearchValue}) {
   }
 
   return (
-    <div className="container">
+    <Fragment>
       <input
         className="plantInput"
         type="text"
@@ -28,6 +29,6 @@ export default function Search({searchValue, setPlantData, setSearchValue}) {
         onChange={handleChange}
       />
       <button className="searchBtn" onClick={() => handleSearch()}>search</button>
-    </div>
+    </Fragment>
   );
 }

@@ -1,8 +1,9 @@
 import React from "react";
-import Navbar from "../Nav";
+import NavFavourites from "../NavFavourites";
 import "../Card/style.css";
 import Column from "../Column";
 import Grid from "../Grid";
+import CalendarDiv from "../CalendarDiv";
 
 //CSS
 import "../Favourites/favourite.css"
@@ -20,7 +21,7 @@ const Favourites = () =>{
     );
     return(
       <div>
-        <Navbar/>
+        <NavFavourites/>
         <div>
           <Column>
           <div className="my-plants">
@@ -36,11 +37,12 @@ const Favourites = () =>{
                   <p><span className="strong">Water needs: </span>{plant.watering}</p>
                   <p><span className="strong">Light: </span>{plant.sunlight}</p>
                 </div>
-                ))};
+                ))}
               </Grid>
             </div>
           </Column>
           <Column>
+                <CalendarDiv />
           </Column>
         </div> 
       </div>)
