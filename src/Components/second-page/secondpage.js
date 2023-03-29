@@ -6,6 +6,9 @@ import Card from "../Card";
 import Grid from "../Grid";
 import CalendarDiv from "../CalendarDiv";
 
+//CSS
+import "../second-page/secondpage.css";
+
 
 function Secondpage() {
   const [searchValue, setSearchValue] = useState("");
@@ -14,7 +17,9 @@ function Secondpage() {
 
   return (
     <Fragment>
+      
       <Nav />
+      <div className="row-container">
         <Column>
             <h3>Search for a houseplant & add it to your collection</h3>
             
@@ -34,7 +39,7 @@ function Secondpage() {
             ))}
           </Grid>
         </Column>
-        
+        </div>  
     </Fragment>
   );
 }
