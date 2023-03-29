@@ -1,14 +1,14 @@
-.rbc-event,
+/* .rbc-event,
 .rbc-day-slot .rbc-background-event {
   color: var(--offWhite);
-}
+} */
 
 .rbc-event,
 .rbc-day-slot .rbc-background-event {
   background-color: var(--forestGreen);
 }
 
-.react-datepicker {
+.react-datepicker  {
   background-color: var(--offWhite);
 }
 
@@ -24,12 +24,12 @@
 
 .inline {
   display: inline-flex;
-  padding: 5%;
+  padding: 0;
 }
 
 .select {
   padding: 10px;
-  height: 35px;
+  height: 40px;
 }
 
 
@@ -37,5 +37,10 @@
   padding: 10px;
   margin: 5px;
   max-width: 100px;
+}
 
+.add-to-calendarBtn {
+  padding: 0 10px; 
+  height: 40px;
+  margin: auto;
 }

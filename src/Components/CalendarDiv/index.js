@@ -55,7 +55,7 @@ function CalendarDiv() {
 
           <DatePicker placeholderText="Date" selected={plant.start} onChange={(start) => setPlant({ ...plant, start: start })} />
           <DatePicker placeholderText="Date" selected={plant.end} onChange={(end) => setPlant({ ...plant, end: end })} />
-          <button onClick={createArray}><i className="fa fa-plus"></i></button>
+          <button className="add-to-calendarBtn" onClick={createArray}><i className="fa fa-plus"></i></button>
 
           </span>
         </div>

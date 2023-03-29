@@ -1,6 +1,6 @@
 
 .grid-container {
-  max-height: 80vh;
+  max-height: 100vh; 
   width: 100%;
   padding: 10px;
   overflow:scroll;

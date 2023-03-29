@@ -54,6 +54,10 @@ h1{
   font-size: 90px;
 }
 
+i {
+  color: var(--forestGreen);
+}
+
 input {
   margin: 1rem 0;
   font-size: 16px;
