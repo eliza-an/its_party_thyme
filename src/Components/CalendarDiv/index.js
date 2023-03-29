@@ -6,7 +6,6 @@ import { useEffect } from 'react';
 import './Calendar.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import Navbar from '../Nav';
 import Column from '../Column';
 
 // npm i react-datepicker
@@ -15,7 +14,7 @@ import Column from '../Column';
 let username = 'partythyme';
 
 const localizer = momentLocalizer(moment);
-function CreateCalendar() {
+function CalendarDiv() {
   let localKeys = Object.keys(localStorage);
   let house;
   // check if username exist                  if yes  then house = username value             if no then create username value []
@@ -39,32 +38,32 @@ function CreateCalendar() {
   }, [plants]);
 
   return (
-    <div className="App">
-      <Navbar />
+    <div className="container">
       <div>
-        <Column>
-          <h2>add new plant</h2>
-          <div>
-            {/* update with data the existing empty plant variable */}
+        <h2>add new plant</h2>
+        <div>
+          {/* update with data the existing empty plant variable */}
+          <select className="select" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })}>
+            <option>--select option</option>
+            {plantsArray.map((plant, index) => (
+              <option key={index} value={plant.common_name}>
+                {plant.common_name}
+              </option>
+            ))}
+          </select>
+          <span className="inline">
 
-            <select value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })}>
-              <option>--select option</option>
-              {plantsArray.map((plant, index) => (
-                <option key={index} value={plant.common_name}>
-                  {plant.common_name}
-                </option>
-              ))}
-            </select>
-            <DatePicker placeholderText="Date" selected={plant.start} onChange={(start) => setPlant({ ...plant, start: start })} />
-            <DatePicker placeholderText="Date" selected={plant.end} onChange={(end) => setPlant({ ...plant, end: end })} />
-            <button onClick={createArray}>Add Plant</button>
-          </div>
-        </Column>
-        <Column>
-          <Calendar localizer={localizer} events={plants} startAccessor="start" endAccessor="end" style={{ margin: '100px', height: 500 }} />
-        </Column>
+          <DatePicker placeholderText="Date" selected={plant.start} onChange={(start) => setPlant({ ...plant, start: start })} />
+          <DatePicker placeholderText="Date" selected={plant.end} onChange={(end) => setPlant({ ...plant, end: end })} />
+          <button onClick={createArray}><i className="fa fa-plus"></i></button>
+
+          </span>
+        </div>
+      </div>
+      <div className="calendar">
+        <Calendar localizer={localizer} events={plants} startAccessor="start" endAccessor="end" />
       </div>
     </div>
   );
 }
-export default CreateCalendar;
+export default CalendarDiv;

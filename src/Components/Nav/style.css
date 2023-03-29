@@ -32,6 +32,18 @@
     justify-content: center;
 }
 
+#nav-links button {
+    border: none;
+    background-color: transparent;
+    color: var(--offWhite);
+    margin: 10px;   
+}
+
+#nav-links button:hover {
+    /* background-color: var(--offWhiteTransparent); */
+    color: rgb(215, 207, 207);
+}
+
 @media only screen and (min-width: 700px) {
     #header-mobile {
       display: none;
@@ -44,14 +56,3 @@
     }
 }
 
-#nav-links button {
-    border: none;
-    background-color: transparent;
-    color: var(--offWhite);
-    margin: 2px;    
-}
-
-#nav-links button:hover {
-    background-color: var(--offWhiteTransparent);
-    color: var(--forestGreen);
-}

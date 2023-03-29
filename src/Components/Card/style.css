@@ -5,18 +5,6 @@
     flex-wrap: wrap;
   }
 
-  @media (min-width: 700px) {
-    .card {
-      width: 12vw;
-    }
-  }
-
-  @media (max-width: 699px) {
-    .card {
-      width: 25vw;
-      margin: 1%;
-    }
-  }
 
   .card {
     display: flex;
