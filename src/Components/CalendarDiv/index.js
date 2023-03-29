@@ -22,7 +22,7 @@ function CalendarDiv() {
   //  check if username exist                if yes  then house = username value
   localKeys.includes(username) ? (house = JSON.parse(localStorage.getItem(username))) : console.log('ej ej something is not okey Pete');
 
-  let plantsArray = JSON.parse(localStorage.getItem('myplants'));
+
 
   // create one plant
   const [plant, setPlant] = useState({ title: '', start: '', end: '' });
