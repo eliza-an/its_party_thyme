@@ -1,0 +1,13 @@
+#signupBtn {
+    background-color: transparent;
+    color: var(--offWhite);
+    position: relative;
+    text-align: center;
+    margin:  5px auto;
+    padding: 0;
+}
+
+#signupBtn:hover {
+    color: var(--actionOrange);
+}
+

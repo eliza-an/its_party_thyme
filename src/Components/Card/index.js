@@ -1,17 +1,30 @@
-import React from 'react;
+import React from "react";
+import "./style.css";
 
-export default function Plants({plant}) {
-    return (
-        <div className='card'>
-            <img className='cardImage' src={plant.default_image.small_url} alt={plant.common_name} /> {/* /*  I think this is correct route through the data set for the image*/ }
-        
-         <div className='text-container'>
-            <h4 className='plantTitle'>{plant.common_name}</h4>
-            <p className="wateringStatus"> {plant.common_name} needs {plant.watering} </p>
-            <p classname="moreDetails"> Click here for more care information about {plant.common_name} </p> {/* add modal opening functionality later  */}
-             </div>
-        
-     </div>
 
-    )
+
+export default function Card( {plant} ) {
+ function favourites(){
+  const myplantsString=localStorage.getItem('myplants')
+  const myplants=myplantsString ? JSON.parse(myplantsString) : [];
+  myplants.push(plant);
+localStorage.setItem("myplants",JSON.stringify(myplants))
+
+} 
+return (
+      <div className="card" key={plant.id} >
+        <div className="image-container">
+            <img src={plant.default_image?.thumbnail} alt=""/>
+        </div>
+        <h3>{plant.common_name}</h3>
+        <hr className="card-hr"/>
+        <p><span className="strong"><i className="fa fa-droplet"></i>Water needs: </span>{plant.watering}</p>
+        <p><i className="fa fa-sun"></i><span className="strong">Likes: </span>{plant.sunlight}</p>
+        <button onClick={favourites} id="collectionBtn"><i className="fa fa-plus"></i></button>
+      </div>
+
+  );
 }
+
+
+

@@ -1,0 +1,43 @@
+/* .rbc-event,
+.rbc-day-slot .rbc-background-event {
+  color: var(--offWhite);
+} */
+
+.rbc-event,
+.rbc-day-slot .rbc-background-event {
+  background-color: var(--forestGreen);
+}
+
+.react-datepicker  {
+  background-color: var(--offWhite);
+}
+
+.rbc-calendar {
+  background-color: var(--offWhite);
+  color: var(--forestGreen);
+  border-radius: 7px;
+  min-height: 350px;
+}
+
+.calendar {
+  padding: 5% 10%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.select {
+  padding: 10px;
+  height: 40px;
+}
+
+.react-datepicker-wrapper input {
+  padding: 10px;
+  margin: 5px;
+  max-width: 100px;
+}
+
+.add-to-calendarBtn {
+  padding: 0 10px; 
+  height: 40px;
+  margin: auto;
+}

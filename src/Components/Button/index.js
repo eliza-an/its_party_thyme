@@ -1,14 +1,10 @@
 import React from 'react';
 import './style.css';
 
-function SignUpBtn(props) {
+function Btn(props) {
     return (
-        <button
-            onClick={props.onClick}
-            className={`signUpBtn ${props.type}`}
-            data-value={props.type}
-            >
-                {props.type}
-        </button>
+        <button className={props.className} >
+        {props.text}
+      </button>
     )
-}
+}export default Btn

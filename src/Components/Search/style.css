@@ -1,0 +1,19 @@
+.plantInput[type="text"] {
+    border-radius: 7px 0 0 7px;
+    transition: box-shadow 0.1s; 
+    margin: 0;
+}
+.searchBtn {
+    background-color: var(--actionOrange);
+    color: var(--offWhite);
+    position: relative;
+    text-align: center;
+    border-radius: 0 7px 7px 0;
+}
+
+.searchBtn:hover {
+    background-color: var(--offWhite);
+    color: var(--actionOrange);
+}
+
+

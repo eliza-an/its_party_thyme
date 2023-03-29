@@ -1,38 +1,68 @@
-.card{
-  width:300px;
-  height: auto;
-  border: none;
 
-}
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=DotGothic16&display=swap');
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.cardImage {
-    width:100%;
+
+  .card {
+    display: flex;
+    flex-direction: column;
     height: 300px;
-    
-}
+    background-color:white;
+    color: var(--forestGreen);
+    border: 10px solid white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+  }
 
-.plantTitle {
-    font-size: 25pt;
-    font-family: Futura Lt BT;
-    margin: 10px;
+  .image-container {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
 
+  .card h3 {
+    padding-left: 0;
+    margin: 10px 10px;
+    color: var(--forestGreen);
+    font-size: 18px;
+    font-family: 'Cardo', serif;
+  }
 
-}
+  .card-hr {
+    width: 30%;
+    color: rgb(243, 241, 241);
+  }
 
-.text-container {
-background-color: #F3F3F3;
-font-size: 16pt;
-margin: 10px;
-color: black; 
-}
+  .card p {
+    margin: 0 10px 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin: 0;
+  }
 
-.wateringStatus {
-color: #ff6700;
-font-size: 18pt;
-}
+  #collectionBtn {
+    background-color: rgb(243, 241, 241);
+    border: 3px solid var(--forestGreen);
+    margin: 25px auto;
+    color: var(--forestGreen);
+    border-radius: 50px;
+    padding: 5px;
+    width: 35px;
+  }
 
-.moreDetails{
-    text-decoration: underline;
+  #collectionBtn:hover {
+    background-color: var(--actionOrange);
+    border: 3px solid var(--actionOrange);
 
-}
+  }
+  #collectionBtn:hover i {
+    color: var(--offWhite);
+  }
 
+  .strong {
+    font-weight: bold;
+  }

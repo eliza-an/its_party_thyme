@@ -1,0 +1,14 @@
+.column {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 900px) {
+    .column {
+        display: inline-flex;
+        width: 50%;
+    }
+}
