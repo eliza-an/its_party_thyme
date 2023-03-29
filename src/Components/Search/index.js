@@ -21,14 +21,16 @@ export default function Search({searchValue, setPlantData, setSearchValue}) {
 
   return (
     <Fragment>
-      <input
-        className="plantInput"
-        type="text"
-        placeholder="Search for a plant"
-        value={searchValue}
-        onChange={handleChange}
-      />
-      <button className="searchBtn" onClick={() => handleSearch()}>search</button>
+      <div className="inline">
+        <input
+          className="plantInput"
+          type="text"
+          placeholder="Search for a plant"
+          value={searchValue}
+          onChange={handleChange}
+        />
+        <button className="searchBtn" onClick={() => handleSearch()}>search</button>
+      </div>
     </Fragment>
   );
 }
