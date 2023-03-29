@@ -20,14 +20,26 @@ DESCRIPTION (#description)
 --------------------------------------------------------------
 The PLANTLY application, allows for users to search a houseplant API to find the houseplants they own, it allwos them to add them to their household and schudule on a calender when each plant requires watering. Allowing them to take the best care of their houseplants, and avoid over or underwatering their plants. '
 ______________________________________________________________
-_Screen shot of landing sign up page:
-![screenshot of deployed webpage](/assets/plantly3)_____________________________________________________________
 ______________________________________________________________
-_Screen shot of main home page, with browse and calender functionality:
-![screenshot of deployed webpage](/assets/plantly2)_____________________________________________________________
+
+
+Screen shot of landing sign up page:
+![screenshot of deployed webpage](./assets/plantly3.jpg)
+
+_____________________________________________________________
 ______________________________________________________________
-_Screen shot of your household page where users saved plants are shown:
-![screenshot of deployed webpage](/assets/plantly1)_____________________________________________________________
+
+Screen shot of main home page, with browse and calender functionality:
+![screenshot of deployed webpage](./assets/plantly2.jpg)
+
+_____________________________________________________________
+______________________________________________________________
+
+
+Screen shot of your household page where users saved plants are shown:
+![screenshot of deployed webpage](./assets/plantly1.jpg)
+
+_____________________________________________________________
 INSTALLATION (#installation)
 --------------------------------------------------------------
 none
