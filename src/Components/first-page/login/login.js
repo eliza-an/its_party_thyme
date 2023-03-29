@@ -55,7 +55,7 @@ const Login= () =>{
         <input 
         type="submit" 
         className="login" 
-        value="login">
+        value=" Go! ">
         </input>
       </div>
    

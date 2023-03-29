@@ -18,13 +18,13 @@
     align-items: center;
 }
 
-#header-full .row {
+#header-full .row-container {
     display: flex;
     background-color: var(--forestGreen);
     justify-content: space-between;
 }
 
-#header-mobile .row {
+#header-mobile .row-container {
     display: flex;
     padding: 0;
     flex-direction: column;
@@ -45,7 +45,7 @@
 }
 
 #nav-links button {
-    border: 2px solid var(--offWhite);
+    border: none;
     background-color: transparent;
     color: var(--offWhite);
     margin: 2px;    

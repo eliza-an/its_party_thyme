@@ -22,19 +22,4 @@ input[type="submit"] {
  .flowerImg{
     display: none;
  }
-
- .username{
-    max-width: 300px;
-    padding-left: 0%;
- }
-
- .password{
-    max-width: 300px;
-    padding-left: 0%;
- }
-
- .login{
-    padding-left: 0%;
- }
-
 }
