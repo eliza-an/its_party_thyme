@@ -29,7 +29,7 @@ function CalendarDiv() {
     // check if username exist                  if yes  then house = username value             if no then create username value []
     localKeys.includes(username) ? (house = JSON.parse(localStorage.getItem(username))) : localStorage.setItem(username, '[]');
     //  check if username exist                if yes  then house = username value
-    localKeys.includes(username) ? (house = JSON.parse(localStorage.getItem(username))) : console.log('ej ej something is not okey Pete');
+    // localKeys.includes(username) ? (house = JSON.parse(localStorage.getItem(username))) : console.log('ej ej something is not okey Pete');
   }, []);
   useEffect(() => {
     localStorage.setItem(username, JSON.stringify(plants));
