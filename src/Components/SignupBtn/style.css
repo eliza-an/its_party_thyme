@@ -1,14 +1,13 @@
 #signupBtn {
-    background-color: var(--actionOrange);
+    background-color: transparent;
     color: var(--offWhite);
     position: relative;
     text-align: center;
     margin:  5px auto;
-    padding: 15px 25px;
+    padding: 0;
 }
 
 #signupBtn:hover {
-    background-color: var(--offWhite);
     color: var(--actionOrange);
 }
 
