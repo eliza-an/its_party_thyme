@@ -18,8 +18,8 @@ return(
                     <h2>Sign up now & commit to keeping happier, healthier plants today!</h2>
                     <p>Sign in below</p>
                     <Login />
-                    <p>Don't have an account yet? <Link to= "/">
-                        <SignupBtn className="signupBtn" text= 'Sign up'></SignupBtn>
+                    <p>Already have an account? <Link to= "/">
+                        <SignupBtn className="signupBtn" text= 'Login'></SignupBtn>
                     </Link></p>
                 </div>
             </Column>
