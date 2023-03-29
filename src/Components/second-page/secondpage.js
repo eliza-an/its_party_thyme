@@ -4,6 +4,7 @@ import Nav from "../Nav";
 import Search from "../Search";
 import Card from "../Card";
 import Grid from "../Grid";
+import CalendarDiv from "../CalendarDiv";
 
 
 function Secondpage() {
@@ -11,32 +12,33 @@ function Secondpage() {
   const [plantData, setPlantData] = useState([]);
 
   const plantList = plantData || [];
-console.log(plantList);  
 
 
   return (
-    <>
+    <Fragment>
       <Nav />
       <Column>
-      <h3>Search for a houseplant & add it to your collection</h3>
-      
-      <Search
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}
-        setPlantData={setPlantData}
-      />
+          <div className="container">
+          <h3>Search for a houseplant & add it to your collection</h3>
+          
+          <Search
+            searchValue={searchValue}
+            setSearchValue={setSearchValue}
+            setPlantData={setPlantData}
+          />
+          </div>
+          <CalendarDiv />
       </Column>
-   
+      
       <Column>
         <Grid>
         {plantList.length === 0 ? (<h4>No plants to display</h4>) : plantList.map((plant) => (
           <Card plant={plant} />
-          
         ))}
         </Grid>
       </Column>
         
-    </>
+    </Fragment>
   );
 }
 

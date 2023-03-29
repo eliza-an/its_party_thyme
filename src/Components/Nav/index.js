@@ -19,10 +19,6 @@ function Navbar(props) {
                 {' '}
                 <SignupBtn text="Your Plants" />
               </Link>
-              <Link to="/Calendar">
-                {' '}
-                <SignupBtn text="Calendar" />
-              </Link>
             </li>
             <li>
               <Link to="/">
@@ -30,7 +26,6 @@ function Navbar(props) {
                 <SignupBtn text="Log Out" />
               </Link>
             </li>
-            <li></li>
           </ul>
         </Container>
       </header>
@@ -41,14 +36,18 @@ function Navbar(props) {
         </Container>
         <Container>
           <ul id="nav-links">
-            <Link to="/your-plants">
-              {' '}
-              <SignupBtn text="Your Plants" />
-            </Link>
+            <li>
+              <Link to="/your-plants">
+                {' '}
+                <SignupBtn text="Your Plants" />
+              </Link>
+            </li>
+            <li>
             <Link to="/">
               {' '}
               <SignupBtn text="Log Out" />
             </Link>
+            </li>
           </ul>
         </Container>
       </header>

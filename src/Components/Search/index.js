@@ -17,14 +17,13 @@ export default function Search({searchValue, setPlantData, setSearchValue}) {
   function handleChange(event) {
     setSearchValue(event.target.value);
   }
-  // console.log(searchValue)
 
   return (
-    <div>
+    <div className="container">
       <input
         className="plantInput"
         type="text"
-        placeholder="type a indoor plant breed.."
+        placeholder="Search for a plant"
         value={searchValue}
         onChange={handleChange}
       />

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Secondpage from './Components/second-page/secondpage';
 import Firstpage from './Components/first-page/firstpage';
 import SignUp from './Components/sign-uppage/signuppage';
-import Calendar from './Components/Calendar/Calendar';
+import Calendar from './Components/CalendarDiv';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Favourites from './Components/Favourites/favourite';
@@ -20,7 +20,6 @@ function App() {
             <Route path="/browse" element={<Secondpage />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/your-plants" element={<Favourites />} />
-            <Route path="/calendar" element={<Calendar />} />
           </Routes>
         </Router>
       </QueryClientProvider>

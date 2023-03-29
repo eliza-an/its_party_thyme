@@ -1,5 +1,5 @@
 .plantInput[type="text"] {
-    width: calc(100% - 2rem);
+    /* width: calc(100% - 2rem); */
     transition: box-shadow 0.1s; 
 }
 .searchBtn {
