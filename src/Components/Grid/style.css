@@ -1,10 +1,9 @@
 
 .grid-container {
-  /* height: 85vh;  */
-  /* width: 100%; */
   padding: 0 10px;
   overflow:scroll;
   display: grid;
+  grid-gap: 10px;
   grid-template-areas: 
   "card card"
   "card card"
@@ -12,6 +11,8 @@
   "card card"
   ;
 }
+
+
 
 @media (min-width: 1200px) {
   .grid-container {

@@ -6,9 +6,6 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=DotGothic16&display=swap');
 
-* {
-  border: solid red 1px;
-}
 
 body {
   margin: 0;
@@ -19,6 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--forestGreen) ;
   color: var(--offWhite);
+  overflow-x: hidden;
 }
 
 /* Root stysles */
@@ -38,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2, h3, h4, h5, h6 {
-  color:#9eb39c;
+  color:#cacac9;
 }
 
 p {
