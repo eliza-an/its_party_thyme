@@ -16,6 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--forestGreen) ;
   color: var(--offWhite);
+  overflow-x: hidden;
 }
 
 /* Root stysles */
@@ -28,11 +29,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cardo', serif;
+  letter-spacing: .5px;
   padding: 0;
   margin: 35px 0 15px 0;
   text-align: center;
 }
 
+h2, h3, h4, h5, h6 {
+  color:#cacac9;
+}
 
 p {
   font-family: 'Gentium Book Plus', serif;
@@ -56,6 +61,10 @@ a:hover {
 
 h1{
   font-size: 90px;
+}
+
+.strong {
+  font-weight: bold;
 }
 
 i {
@@ -87,4 +96,8 @@ button {
   padding: 0;
 }
 
-
+.container {
+  text-align: center;
+  margin: auto;
+  padding: 20px; 
+}

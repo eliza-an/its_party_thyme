@@ -1,8 +1,3 @@
-/* .rbc-event,
-.rbc-day-slot .rbc-background-event {
-  color: var(--offWhite);
-} */
-
 .rbc-event,
 .rbc-day-slot .rbc-background-event {
   background-color: var(--forestGreen);
@@ -22,12 +17,10 @@
 .calendar {
   padding: 5% 10%;
   max-width: 400px;
-  margin: auto;
 }
 
-.select {
-  padding: 10px;
-  height: 40px;
+#select {
+  padding: 10px !important;
 }
 
 .react-datepicker-wrapper input {

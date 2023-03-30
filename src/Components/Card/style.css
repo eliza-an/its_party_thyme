@@ -1,68 +1,69 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=DotGothic16&display=swap');
 .card-container {
     display: flex;
     flex-wrap: wrap;
   }
 
+.card {
+  display: flex;
+  max-width: 160px;
+  flex-direction: column;
+  height: 300px;
+  background-color:white;
+  color: var(--forestGreen);
+  border: 10px solid white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 2%;
+}
 
+.image-container {
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card h3 {
+  padding-left: 0;
+  margin: 10px 10px;
+  color: var(--forestGreen);
+  font-size: 18px;
+  font-family: 'Cardo', serif;
+}
+
+.card-hr {
+  width: 30%;
+  color: rgb(243, 241, 241);
+}
+
+.card p {
+  margin: 0 10px 0 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+
+#collectionBtn {
+  background-color: rgb(243, 241, 241);
+  border: 3px solid var(--forestGreen);
+  margin: 25px auto;
+  color: var(--forestGreen);
+  border-radius: 50px;
+  padding: 5px;
+  width: 35px;
+}
+
+#collectionBtn:hover {
+  background-color: var(--actionOrange);
+  border: 3px solid var(--actionOrange);
+
+}
+#collectionBtn:hover i {
+  color: var(--offWhite);
+}
+
+@media (max-width: 400px) {
   .card {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    background-color:white;
-    color: var(--forestGreen);
-    border: 10px solid white;
-    border-radius: 10px;
-    text-align: center;
-    margin: 2%;
+    max-width: 150px;
   }
-
-  .image-container {
-    height: 150px;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-
-  .card h3 {
-    padding-left: 0;
-    margin: 10px 10px;
-    color: var(--forestGreen);
-    font-size: 18px;
-    font-family: 'Cardo', serif;
-  }
-
-  .card-hr {
-    width: 30%;
-    color: rgb(243, 241, 241);
-  }
-
-  .card p {
-    margin: 0 10px 0 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    margin: 0;
-  }
-
-  #collectionBtn {
-    background-color: rgb(243, 241, 241);
-    border: 3px solid var(--forestGreen);
-    margin: 25px auto;
-    color: var(--forestGreen);
-    border-radius: 50px;
-    padding: 5px;
-    width: 35px;
-  }
-
-  #collectionBtn:hover {
-    background-color: var(--actionOrange);
-    border: 3px solid var(--actionOrange);
-
-  }
-  #collectionBtn:hover i {
-    color: var(--offWhite);
-  }
-
-  .strong {
-    font-weight: bold;
-  }
+}

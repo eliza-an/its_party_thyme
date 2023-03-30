@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Secondpage from './Components/second-page/secondpage';
-import Firstpage from './Components/first-page/firstpage';
-import SignUp from './Components/sign-uppage/signuppage';
-
-
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+//Page imports
+import Secondpage from './Components/Secondpage/secondpage';
+import Firstpage from './Components/Firstpage/firstpage';
+import SignUp from './Components/Signup-page/signuppage';
 import Favourites from './Components/Favourites/favourite';
+
 
 const client = new QueryClient();
 

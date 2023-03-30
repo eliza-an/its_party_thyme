@@ -7,7 +7,7 @@ import Grid from "../Grid";
 import CalendarDiv from "../CalendarDiv";
 
 //CSS
-import "../second-page/secondpage.css";
+import "./secondpage.css";
 
 
 function Secondpage() {
@@ -19,9 +19,9 @@ function Secondpage() {
     <Fragment>
       
       <Nav />
-      <div className="row-container">
+      <div className="container">
         <Column>
-            <h3>Search for a houseplant & add it to your collection</h3>
+            <h2>Search for a houseplant & add it to your collection</h2>
             
             <Search
               searchValue={searchValue}
@@ -29,15 +29,26 @@ function Secondpage() {
               setPlantData={setPlantData}
             />
             
+            <div id="mobile-grid" className = "my-plants">
+              <Grid>
+                {plantList.length === 0 ? (<h3 className="muted">Use the search bar to search for plants and add them to your collection</h3>) : plantList.map((plant) => (
+                  <Card plant={plant} />
+                ))}
+              </Grid>
+            </div>
+
             <CalendarDiv />
         </Column>
         
         <Column>
+          <div id="desktop-grid" className = "my-plants">
           <Grid>
-            {plantList.length === 0 ? (<h4>No plants to display</h4>) : plantList.map((plant) => (
+            {plantList.length === 0 ? (<h3 className="muted">Use the search bar to search for plants and add them to your collection</h3>) : plantList.map((plant) => (
               <Card plant={plant} />
             ))}
           </Grid>
+          </div>
+          
         </Column>
         </div>  
     </Fragment>

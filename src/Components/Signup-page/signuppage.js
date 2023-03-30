@@ -1,17 +1,18 @@
-import "./signup.css"
 import React, {Fragment} from "react";
-import Login from "../first-page/login/login";
+import Login from "../Login/login";
 import Column from "../Column";
-
 import SignupBtn from "../SignupBtn";
 import { Link } from "react-router-dom";
+
+//CSS
+import "./signup.css"
 
 
 const SignUp= () =>{
 
 return(
     <Fragment>
-        <div className="Container">
+        <div className="row-container">
             <Column>
                 <div className="col-left">
                     <h1>Plantly</h1>

@@ -1,0 +1,14 @@
+@media screen and (max-width: 899px) {
+    #mobile-grid { 
+        margin: 20px;
+        }
+    #desktop-grid {
+        display: none
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #mobile-grid {
+        display: none
+    }
+}

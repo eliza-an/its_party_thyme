@@ -1,5 +1,6 @@
 .my-plants {
     text-align: left;
+    max-width: 100vw;
 }
 
 #favourites-card {

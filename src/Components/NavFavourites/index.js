@@ -1,16 +1,16 @@
 import React, {Fragment} from 'react';
-import Container from '../Container';
-import './style.css';
-import SignupBtn from '../SignupBtn';
 import { Link } from 'react-router-dom';
+import Container from '../Container';
+import SignupBtn from '../SignupBtn';
+
+//CSS
+import './style.css';
 
 
 function NavFavourites(props) {
 
-
   return (
     <Fragment>
-      <div id="favouritesPage">
         <header id="header-full" className="nav">
           <Container>
             <div id="logo">Plantly</div>
@@ -52,7 +52,6 @@ function NavFavourites(props) {
             </ul>
           </Container>
         </header>
-      </div>
     </Fragment>
   );
 }

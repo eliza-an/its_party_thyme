@@ -1,12 +1,12 @@
-import React from "react";
+import React, {Fragment} from "react";
 import NavFavourites from "../NavFavourites";
-import "../Card/style.css";
 import Column from "../Column";
 import Grid from "../Grid";
 import CalendarDiv from "../CalendarDiv";
 
 //CSS
 import "../Favourites/favourite.css"
+import "../Card/style.css";
 
 
 const Favourites = () =>{
@@ -20,12 +20,12 @@ const Favourites = () =>{
     ))
     );
     return(
-      <div>
+      <Fragment>
         <NavFavourites/>
-        <div>
+        <div className = "container">
           <Column>
+          <h2>My Plants</h2>
           <div className="my-plants">
-            <h2>My Plants</h2>
               <Grid>
                 {uniqueplants.map(plant => (
                 <div className="card" id="favourites-card" key={plant.id} >
@@ -45,7 +45,7 @@ const Favourites = () =>{
                 <CalendarDiv />
           </Column>
         </div> 
-      </div>)
+      </Fragment>)
  }
   
 

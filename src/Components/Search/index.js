@@ -3,7 +3,6 @@ import "./style.css";
 
 export default function Search({searchValue, setPlantData, setSearchValue}) {
 
-
   function handleSearch() {
     fetch(
       `https://perenual.com/api/species-list?page=1&key=sk-htIX6419d1b8cfc9f275&q=${searchValue}&indoor=1`,
