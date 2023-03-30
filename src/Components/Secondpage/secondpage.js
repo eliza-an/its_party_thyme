@@ -29,17 +29,26 @@ function Secondpage() {
               setPlantData={setPlantData}
             />
             
+            <div id="mobile-grid" className = "my-plants">
+              <Grid>
+                {plantList.length === 0 ? (<h3 className="muted">Use the search bar to search for plants and add them to your collection</h3>) : plantList.map((plant) => (
+                  <Card plant={plant} />
+                ))}
+              </Grid>
+            </div>
+
             <CalendarDiv />
         </Column>
         
         <Column>
-          <div className = "my-plants">
+          <div id="desktop-grid" className = "my-plants">
           <Grid>
             {plantList.length === 0 ? (<h3 className="muted">Use the search bar to search for plants and add them to your collection</h3>) : plantList.map((plant) => (
               <Card plant={plant} />
             ))}
           </Grid>
           </div>
+          
         </Column>
         </div>  
     </Fragment>

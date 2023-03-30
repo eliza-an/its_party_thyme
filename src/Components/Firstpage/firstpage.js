@@ -6,7 +6,8 @@ import SignupBtn from "../SignupBtn";
 import Column from "../Column";
 
 // CSS
-import "./firstpage.css"
+import "./firstpage.css";
+import "../Favourites/favourite.css";
 
 
 const Firstpage= () =>{
