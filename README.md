@@ -65,6 +65,13 @@ Laurence Moreton Burt
 
 We used, React, ReacQuery, Font Awesome,React Big Calender, Moment, Axios and Perenular API to create th e final products. 
 
+Some resources used are: 
+https://www.freecodecamp.org/news/how-to-persist-a-logged-in-user-in-react/  
+
+https://stackoverflow.com/questions/62861269/attempted-import-error-usehistory-is-not-exported-from-react-router-dom 
+
+
+https://stackoverflow.com/questions/2218999/how-to-remove-all-duplicates-from-an-array-of-objects 
 ______________________________________________________________
 ______________________________________________________________
 TESTS (#tests)
