@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-
 p {
   font-family: 'Gentium Book Plus', serif;
   font-size: 16px;
@@ -56,6 +55,10 @@ a:hover {
 
 h1{
   font-size: 90px;
+}
+
+.strong {
+  font-weight: bold;
 }
 
 i {
@@ -87,4 +90,8 @@ button {
   padding: 0;
 }
 
-
+.container {
+  justify-content: center;
+  margin: auto;
+  padding: 0; 
+}

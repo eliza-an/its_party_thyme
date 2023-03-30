@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './style.css';
 
@@ -9,6 +8,6 @@ function signupBtn(props) {
         className={props.className} >
         {props.text}
       </button>
-    )
+    );
 }
 export default signupBtn

@@ -7,7 +7,7 @@ import Grid from "../Grid";
 import CalendarDiv from "../CalendarDiv";
 
 //CSS
-import "../second-page/secondpage.css";
+import "./secondpage.css";
 
 
 function Secondpage() {
@@ -19,7 +19,7 @@ function Secondpage() {
     <Fragment>
       
       <Nav />
-      <div className="row-container">
+      <div className="container">
         <Column>
             <h3>Search for a houseplant & add it to your collection</h3>
             

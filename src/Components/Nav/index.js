@@ -1,16 +1,15 @@
 import React, {Fragment} from 'react';
-import Container from '../Container';
-import './style.css';
-import SignupBtn from '../SignupBtn';
 import { Link } from 'react-router-dom';
+import Container from '../Container';
+import SignupBtn from '../SignupBtn';
+
+//CSS
+import './style.css';
 
 
 function Navbar(props) {
-
-
   return (
     <Fragment>
-      <div id="pageOne">
         <header id="header-full" className="nav">
           <Container>
             <div id="logo">Plantly</div>
@@ -52,8 +51,6 @@ function Navbar(props) {
             </ul>
           </Container>
         </header>
-      </div>
-
     </Fragment>
   );
 }

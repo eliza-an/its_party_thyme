@@ -1,34 +1,31 @@
 import React, { useState } from "react";
-import "./login.css"
 import { useNavigate } from 'react-router-dom';
+
+//CSS
+import "./login.css"
 
 
 const Login= () =>{
-//adding a username Usestate
+  //adding a username Usestate
   const [username, setUsername] = useState("");
   //adding a password useState
   const [password, setPassword] = useState("");
   //setting the error message 
   const [errorMessage, createErrorMessage] = useState("");
 
-
   const history = useNavigate()
 
   //the asscunc handlesubmit function
   const handleSubmit = async e => {
-    
-      e.preventDefault();
+    e.preventDefault();
     
 
-
- if (username === "partythyme" && password === "pass123") {
-   history('/browse')
-   }else{
+    if (username === "partythyme" && password === "pass123") {
+    history('/browse')
+    } else {
     createErrorMessage("Username or Password is not correct")
-  }
-
-    };
-  
+    }
+  };
 
   // if no ones is logged in, the login form will be shown
   return (
@@ -60,11 +57,11 @@ const Login= () =>{
    
       {errorMessage && <p className="errormessage">{errorMessage}</p>} {/* creating the error message */}
     
-   
     </form>
-  );}
+  );
+}
 
   
-  export default Login
+export default Login
   
  

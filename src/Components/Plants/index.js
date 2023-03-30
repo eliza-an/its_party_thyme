@@ -19,11 +19,11 @@ export default function PlantsCopy () {
         return <div>Error ...</div>
     }
 
-  return (
-    <div>
-        {plantData.data.map((plant) => (
-            <Card plant={plant}/>
-        ))}
-    </div>
-  )
+    return (
+        <div>
+            {plantData.data.map((plant) => (
+                <Card plant={plant}/>
+            ))}
+        </div>
+    );
 };

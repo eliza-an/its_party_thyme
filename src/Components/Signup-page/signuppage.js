@@ -1,10 +1,11 @@
-import "./signup.css"
 import React, {Fragment} from "react";
-import Login from "../first-page/login/login";
+import Login from "../First-page/Login/login";
 import Column from "../Column";
-
 import SignupBtn from "../SignupBtn";
 import { Link } from "react-router-dom";
+
+//CSS
+import "./signup.css"
 
 
 const SignUp= () =>{
