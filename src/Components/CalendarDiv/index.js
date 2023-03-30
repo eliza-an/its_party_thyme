@@ -5,7 +5,7 @@ import { useState } from 'react';
 import './Calendar.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
 let username = 'partythyme';
@@ -29,7 +29,7 @@ function CalendarDiv() {
           <h2 className="sub-header">Add a plant to your watering schedule</h2>
           <div>
             {/* update with data the existing empty plant variable */}
-          <input type="text" placeholder="Plant" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })} />
+          <input id="select" type="text" placeholder="Plant" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })} />
             <span className="inline">
 
             <DatePicker placeholderText="Date" selected={plant.start} onChange={(start) => setPlant({ ...plant, start: start })} />

@@ -24,8 +24,8 @@ const Favourites = () =>{
         <NavFavourites/>
         <div className = "container">
           <Column>
+          <h2>My Plants</h2>
           <div className="my-plants">
-            <h2>My Plants</h2>
               <Grid>
                 {uniqueplants.map(plant => (
                 <div className="card" id="favourites-card" key={plant.id} >

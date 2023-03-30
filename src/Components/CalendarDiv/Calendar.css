@@ -19,9 +19,8 @@
   max-width: 400px;
 }
 
-.select {
-  padding: 10px;
-  height: 35px;
+#select {
+  padding: 10px !important;
 }
 
 .react-datepicker-wrapper input {
