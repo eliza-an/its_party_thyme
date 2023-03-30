@@ -12,7 +12,7 @@ const SignUp= () =>{
 
 return(
     <Fragment>
-        <div className="Container">
+        <div className="row-container">
             <Column>
                 <div className="col-left">
                     <h1>Plantly</h1>

@@ -26,7 +26,7 @@ function CalendarDiv() {
   return (
     <Fragment>
         <div>
-          <h3 className="sub-header">Add a watering</h3>
+          <h2 className="sub-header">Add a plant to your watering schedule</h2>
           <div>
             {/* update with data the existing empty plant variable */}
           <input type="text" placeholder="Plant" value={plant.title} onChange={(title) => setPlant({ ...plant, title: title.target.value })} />

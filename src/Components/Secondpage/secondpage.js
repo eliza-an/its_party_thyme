@@ -21,7 +21,7 @@ function Secondpage() {
       <Nav />
       <div className="container">
         <Column>
-            <h3>Search for a houseplant & add it to your collection</h3>
+            <h2>Search for a houseplant & add it to your collection</h2>
             
             <Search
               searchValue={searchValue}
@@ -34,7 +34,7 @@ function Secondpage() {
         
         <Column>
           <Grid>
-            {plantList.length === 0 ? (<h4>No plants to display</h4>) : plantList.map((plant) => (
+            {plantList.length === 0 ? (<h3 className="muted">Use the search bar to search for plants and add them to your collection</h3>) : plantList.map((plant) => (
               <Card plant={plant} />
             ))}
           </Grid>

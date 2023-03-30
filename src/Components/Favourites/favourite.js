@@ -22,7 +22,7 @@ const Favourites = () =>{
     return(
       <Fragment>
         <NavFavourites/>
-        <div>
+        <div className = "container">
           <Column>
           <div className="my-plants">
             <h2>My Plants</h2>

@@ -6,6 +6,9 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat&display=swap');  
 @import url('https://fonts.googleapis.com/css2?family=Cardo&family=DotGothic16&display=swap');
 
+* {
+  border: solid red 1px;
+}
 
 body {
   margin: 0;
@@ -28,9 +31,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Cardo', serif;
+  letter-spacing: .5px;
   padding: 0;
   margin: 35px 0 15px 0;
   text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
+  color:#9eb39c;
 }
 
 p {
@@ -91,7 +99,7 @@ button {
 }
 
 .container {
-  justify-content: center;
+  text-align: center;
   margin: auto;
-  padding: 0; 
+  padding: 20px; 
 }
