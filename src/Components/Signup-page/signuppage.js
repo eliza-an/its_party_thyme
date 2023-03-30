@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import Login from "../First-page/Login/login";
+import Login from "../Login/login";
 import Column from "../Column";
 import SignupBtn from "../SignupBtn";
 import { Link } from "react-router-dom";

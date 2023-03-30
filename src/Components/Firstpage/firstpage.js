@@ -1,6 +1,7 @@
 import React, {Fragment} from "react";
-import Login from "./Login/login";
 import { Link } from 'react-router-dom';
+
+import Login from "../Login/login";
 import SignupBtn from "../SignupBtn";
 import Column from "../Column";
 

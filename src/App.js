@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 //Page imports
 import Secondpage from './Components/Secondpage/secondpage';
-import Firstpage from './Components/First-page/firstpage';
+import Firstpage from './Components/Firstpage/firstpage';
 import SignUp from './Components/Signup-page/signuppage';
 import Favourites from './Components/Favourites/favourite';
 
